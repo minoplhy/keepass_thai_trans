@@ -25,7 +25,7 @@ According to Wikipedia , KeePass or KeePass Password Safe is a free and open-sou
 
 # License 
 
-KeePass: Copyright © 2003-2020 Dominik Reichl.
+KeePass: Copyright © 2003-2021 Dominik Reichl.
 The program is distributed under the terms of the GNU General Public License version 2 or later.
 
 [KeePass 2.X license](https://keepass.info/help/v2/license.html)
