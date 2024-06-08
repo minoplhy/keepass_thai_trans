@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.52</ApplicationVersion>
+		<ApplicationVersion>2.53</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>EFDF66C6C0B39841A4E08C5F6D7AB34E</FileUuid>
-		<LastModified>2022-09-03 17:22:33Z</LastModified>
+		<FileUuid>B9C80475B9B6D549919F07DF59A37341</FileUuid>
+		<LastModified>2023-01-03 12:19:19Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -83,6 +83,10 @@
 				<Data>
 					<Name>All</Name>
 					<Value>ทั้งหมด</Value>
+				</Data>
+				<Data>
+					<Name>AllDataInclOrg</Name>
+					<Value>ข้อมูลทั้งหมด (รวมถึงข้อมูลที่ถูกจัดเรียง)</Value>
 				</Data>
 				<Data>
 					<Name>AllFiles</Name>
@@ -227,6 +231,14 @@
 				<Data>
 					<Name>AutoShowSoonToExpireEntries</Name>
 					<Value>แสดงรายการที่จะหมดอายุในเร็ว ๆ นี้ (ถ้ามี)</Value>
+				</Data>
+				<Data>
+					<Name>AutoSortDeactivateQ</Name>
+					<Value>คุณต้องการปิดใช้งานการเรียงลำดับอัตโนมัติหรือไม่?</Value>
+				</Data>
+				<Data>
+					<Name>AutoSortNoRearrange</Name>
+					<Value>ไม่สามารถจัดเรียงรายการได้ในขณะนี้ เนื่องจากมีการเปิดใช้งานการจัดเรียงอัตโนมัติ</Value>
 				</Data>
 				<Data>
 					<Name>AutoType</Name>
@@ -513,6 +525,10 @@
 					<Value>บริษัท</Value>
 				</Data>
 				<Data>
+					<Name>CompareEntries</Name>
+					<Value>เปรียบเทียบรายการ</Value>
+				</Data>
+				<Data>
 					<Name>Comparison</Name>
 					<Value>การเปรียบเทียบ</Value>
 				</Data>
@@ -621,12 +637,20 @@
 					<Value>คัดลอกรา&amp;ยการ (ไม่เข้ารหัส)</Value>
 				</Data>
 				<Data>
+					<Name>CopyHmacOtp</Name>
+					<Value>คัดลอก &amp;HMAC-Based OTP</Value>
+				</Data>
+				<Data>
 					<Name>CopyInitialPasswordDesc</Name>
 					<Value>คัดลอกรหัสผ่านที่เป็นปัจจุบันเมื่อเปิดกล่องโต้ตอบ</Value>
 				</Data>
 				<Data>
 					<Name>CopyLink</Name>
 					<Value>คัดลอกลิงค์</Value>
+				</Data>
+				<Data>
+					<Name>CopyNotes</Name>
+					<Value>คัดลอก&amp;โน๊ต</Value>
 				</Data>
 				<Data>
 					<Name>CopyObject</Name>
@@ -643,6 +667,14 @@
 				<Data>
 					<Name>CopyTanMenu</Name>
 					<Value>คั&amp;ดลอก TAN</Value>
+				</Data>
+				<Data>
+					<Name>CopyTimeOtp</Name>
+					<Value>คัดลอก Time-Based OTP</Value>
+				</Data>
+				<Data>
+					<Name>CopyTitle</Name>
+					<Value>คัดลอก&amp;หัวข้อ</Value>
 				</Data>
 				<Data>
 					<Name>CopyUrls</Name>
@@ -719,6 +751,10 @@
 				<Data>
 					<Name>CtrlAltAConflictHint</Name>
 					<Value>คุณสามารถเปลี่ยนคีย์ Auto-type ลัดส่วนกลางเป็นคีย์ผสมอื่นได้ใน 'เครื่้องมือ' -&gt; 'ตัวเลือก' -&gt;แท็บ 'การรวบรวม'</Value>
+				</Data>
+				<Data>
+					<Name>Current</Name>
+					<Value>ปัจจุบัน</Value>
 				</Data>
 				<Data>
 					<Name>CurrentStyle</Name>
@@ -905,12 +941,16 @@
 					<Value>รายละเอียด</Value>
 				</Data>
 				<Data>
+					<Name>Dialog</Name>
+					<Value>กล่องโต้ตอบ</Value>
+				</Data>
+				<Data>
 					<Name>DialogNoShowAgain</Name>
 					<Value>อย่าแสดงกล่องโต้ตอบนี้อีก</Value>
 				</Data>
 				<Data>
 					<Name>Dialogs</Name>
-					<Value>ไดอะล็อก</Value>
+					<Value>กล่องโต้ตอบ</Value>
 				</Data>
 				<Data>
 					<Name>Disable</Name>
@@ -1095,6 +1135,10 @@
 				<Data>
 					<Name>Entry</Name>
 					<Value>รายการ</Value>
+				</Data>
+				<Data>
+					<Name>EntryDifferences</Name>
+					<Value>ความแตกต่างระหว่างสองรายการ</Value>
 				</Data>
 				<Data>
 					<Name>EntryList</Name>
@@ -1449,6 +1493,10 @@
 					<Value>บังคับใช้ฟอนต์ของระบบ (Unix เท่านั้น)</Value>
 				</Data>
 				<Data>
+					<Name>ForegroundColor</Name>
+					<Value>สีพื้นหน้า</Value>
+				</Data>
+				<Data>
 					<Name>Format</Name>
 					<Value>รูปแบบ</Value>
 				</Data>
@@ -1579,10 +1627,6 @@
 				<Data>
 					<Name>HistoryBased</Name>
 					<Value>อ้างอิงจากประวัติ</Value>
-				</Data>
-				<Data>
-					<Name>HmacOtp</Name>
-					<Value>OTP แบบ HMAC</Value>
 				</Data>
 				<Data>
 					<Name>Homebanking</Name>
@@ -2137,6 +2181,10 @@
 					<Value>ย่อเล็กสุดลงในถาด</Value>
 				</Data>
 				<Data>
+					<Name>Modified</Name>
+					<Value>แก้ไขแล้ว</Value>
+				</Data>
+				<Data>
 					<Name>More</Name>
 					<Value>เพิ่ม</Value>
 				</Data>
@@ -2227,6 +2275,10 @@
 				<Data>
 					<Name>NewDatabase</Name>
 					<Value>ฐานข้อมูลใหม่</Value>
+				</Data>
+				<Data>
+					<Name>Newer</Name>
+					<Value>ใหม่กว่า</Value>
 				</Data>
 				<Data>
 					<Name>NewerNetRequired</Name>
@@ -2331,6 +2383,10 @@
 				<Data>
 					<Name>Ok</Name>
 					<Value>ตกลง</Value>
+				</Data>
+				<Data>
+					<Name>Older</Name>
+					<Value>เก่ากว่า</Value>
 				</Data>
 				<Data>
 					<Name>OldFormat</Name>
@@ -2729,6 +2785,10 @@
 					<Value>ป้อนชื่อสำหรับโปรไฟล์ใหม่หรือเลือกโปรไฟล์ที่มีอยู่เพื่อเขียนทับ:</Value>
 				</Data>
 				<Data>
+					<Name>Properties</Name>
+					<Value>คุณสมบัติ</Value>
+				</Data>
+				<Data>
 					<Name>PwGenOpen</Name>
 					<Value>เปิดโปรแกรมสร้างรหัสผ่าน...</Value>
 				</Data>
@@ -2739,6 +2799,10 @@
 				<Data>
 					<Name>QualityCheckToggle</Name>
 					<Value>เปิด/ปิด การใช้งานการประมาณคุณภาพสำหรับรายการนี้ (ที่นี่ในรายงานคุณภาพรหัสผ่าน ... )</Value>
+				</Data>
+				<Data>
+					<Name>QualityEstimation</Name>
+					<Value>การประมาณคุณภาพ</Value>
 				</Data>
 				<Data>
 					<Name>Quick</Name>
@@ -2933,6 +2997,10 @@
 					<Value>อย่าถามว่าจะซิงโครไนซ์หรือเขียนทับ; บังคับให้ซิงโครไนซ์</Value>
 				</Data>
 				<Data>
+					<Name>SaveObjectAs</Name>
+					<Value>บันทึก {PARAM} เป็น</Value>
+				</Data>
+				<Data>
 					<Name>SavingDatabase</Name>
 					<Value>กำลังบันทึกฐานข้อมูล...</Value>
 				</Data>
@@ -3113,6 +3181,10 @@
 					<Value>แสดงเส้นทางแบบเต็มในแถบหัวเรื่อง (แทนชื่อไฟล์เท่านั้น)</Value>
 				</Data>
 				<Data>
+					<Name>ShowHmacOtp</Name>
+					<Value>แสดง H&amp;MAC-Based OTP</Value>
+				</Data>
+				<Data>
 					<Name>ShowIn</Name>
 					<Value>แสดงใน</Value>
 				</Data>
@@ -3125,8 +3197,8 @@
 					<Value>แสดงมากขึ้น</Value>
 				</Data>
 				<Data>
-					<Name>ShowObject</Name>
-					<Value>แสดง {PARAM}</Value>
+					<Name>ShowTimeOtp</Name>
+					<Value>แสดง Tim&amp;e-Based OTP</Value>
 				</Data>
 				<Data>
 					<Name>ShowWithFileManager</Name>
@@ -3321,10 +3393,6 @@
 					<Value>เวลา</Value>
 				</Data>
 				<Data>
-					<Name>TimeOtp</Name>
-					<Value>Time-Based OTP</Value>
-				</Data>
-				<Data>
 					<Name>TimeReq</Name>
 					<Value>อาจใช้เวลาสักครู่...</Value>
 				</Data>
@@ -3463,6 +3531,10 @@
 				<Data>
 					<Name>Unknown</Name>
 					<Value>ไม่ทราบ</Value>
+				</Data>
+				<Data>
+					<Name>Unsaved</Name>
+					<Value>ยังไม่บันทึก</Value>
 				</Data>
 				<Data>
 					<Name>UnsupportedByMono</Name>
@@ -4309,6 +4381,10 @@
 					<Value>รายการที่&amp;แก้ไขล่าสุด...</Value>
 				</Data>
 				<Data>
+					<Name>m_menuFindHistory</Name>
+					<Value>&amp;ประวัติ...</Value>
+				</Data>
+				<Data>
 					<Name>m_menuFindLarge</Name>
 					<Value>&amp;รายการใหญ่...</Value>
 				</Data>
@@ -4541,7 +4617,7 @@
 				</Data>
 				<Data>
 					<Name>m_ctxToolsFieldRefsInTitle</Name>
-					<Value>ในฟิลด์&amp;ชื่อเรื่อง</Value>
+					<Value>ในฟิลด์&amp;หัวข้อ</Value>
 				</Data>
 				<Data>
 					<Name>m_ctxToolsFieldRefsInUserName</Name>
@@ -6672,10 +6748,10 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_lblInfo" BaseHash="v1:ka7K">
+				<Control Name="m_lblInfo" BaseHash="v1:5o8v">
 					<Layout />
 				</Control>
-				<Control Name="m_lvMain" BaseHash="v1:EqsX">
+				<Control Name="m_lvMain" BaseHash="v1:joVb">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -7435,8 +7511,12 @@
 				<Control Name="m_btnGenPw" BaseHash="v1:jORn">
 					<Layout />
 				</Control>
-				<Control Name="m_btnHistoryDelete" BaseHash="v1:fxLk">
-					<Text>ล&amp;บ</Text>
+				<Control Name="m_btnHistoryCompare" BaseHash="v1:h5fA">
+					<Text>&amp;เปรียบเทียบ</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnHistoryDelete" BaseHash="v1:qhBr">
+					<Text>&amp;ลบ</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnHistoryRestore" BaseHash="v1:YfPk">
@@ -7576,10 +7656,6 @@
 					<Text>ใส่ซํ้&amp;า:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblPrev" BaseHash="v1:/qCP">
-					<Text>&amp;เวอร์ชันก่อนหน้า:</Text>
-					<Layout />
-				</Control>
 				<Control Name="m_lblQuality" BaseHash="v1:kHJ+">
 					<Text>คุณภาพ:</Text>
 					<Layout />
@@ -7609,6 +7685,10 @@
 				</Control>
 				<Control Name="m_lblUuid" BaseHash="v1:Kh/N">
 					<Text>&amp;UUID:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblVersions" BaseHash="v1:mM/A">
+					<Text>เวอ&amp;ร์ชั่น</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_linkAutoTypeObfuscation" BaseHash="v1:c8hn">
