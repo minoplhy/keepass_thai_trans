@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.48</ApplicationVersion>
+		<ApplicationVersion>2.49</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>229A2CAF3A66274685045B1D320F7F8C</FileUuid>
-		<LastModified>2021-05-06 06:42:42Z</LastModified>
+		<FileUuid>7673670C074A2445B918253DBFCCD3C9</FileUuid>
+		<LastModified>2021-09-06 17:49:07Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -125,6 +125,10 @@
 					<Value>คุณต้องการดำเนินการต่อหรือไม่?</Value>
 				</Data>
 				<Data>
+					<Name>AssociationsLower</Name>
+					<Value>การเชื่อมโยง</Value>
+				</Data>
+				<Data>
 					<Name>Asterisks</Name>
 					<Value>ดอกจัน</Value>
 				</Data>
@@ -226,31 +230,31 @@
 				</Data>
 				<Data>
 					<Name>AutoType</Name>
-					<Value>พิมพ์อัตโนมัติ</Value>
+					<Value>Auto-Type</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeAbortedOnWindow</Name>
-					<Value>พิมพ์อัตโนมัติถูกยกเลิกเนื่องจากหน้าต่างเป้าหมายไม่ได้รับอนุญาตโดยนโยบายแอปพลิเคชัน (กำหนดโดยผู้ดูแลระบบของคุณ)</Value>
+					<Value>Auto-type ถูกยกเลิกเนื่องจากหน้าต่างเป้าหมายไม่ได้รับอนุญาตโดยนโยบายแอปพลิเคชัน (กำหนดโดยผู้ดูแลระบบของคุณ)</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeAlwaysShowSelDialog</Name>
-					<Value>แสดงกล่องโต้ตอบการเลือกรายการพิมพ์อัตโนมัติทั่วโลกเสมอ</Value>
+					<Value>แสดงกล่องโต้ตอบการเลือกรายการ Auto-Type ส่วนกลางเสมอ</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeCancelOnTitleChange</Name>
-					<Value>ยกเลิกการพิมพ์อัตโนมัติเมื่อชื่อหน้าต่างเป้าหมายเปลี่ยนไป</Value>
+					<Value>ยกเลิกการ Auto-Type เมื่อชื่อหน้าต่างเป้าหมายเปลี่ยนไป</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeCancelOnWindowChange</Name>
-					<Value>ยกเลิกการพิมพ์อัตโนมัติเมื่อหน้าต่างเป้าหมายเปลี่ยนไป</Value>
+					<Value>ยกเลิกการ Auto-Type เมื่อหน้าต่างเป้าหมายเปลี่ยนไป</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeEntrySelection</Name>
-					<Value>พิมพ์การเลือกรายการอัตโนมัติ</Value>
+					<Value>Auto-Type การเลือกรายการ</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeEntrySelectionDescLong2</Name>
-					<Value>พบรายการต่อไปนี้สำหรับหน้าต่างเป้าหมายที่ใช้งานอยู่ในปัจจุบัน โปรดเลือกรายการที่คุณต้องการพิมพ์อัตโนมัติลงในหน้าต่างเป้าหมาย</Value>
+					<Value>พบรายการต่อไปนี้สำหรับหน้าต่างเป้าหมายที่ใช้งานอยู่ในปัจจุบัน โปรดเลือกรายการที่คุณต้องการ Auto-Type ลงในหน้าต่างเป้าหมาย</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeEntrySelectionDescShort</Name>
@@ -258,7 +262,7 @@
 				</Data>
 				<Data>
 					<Name>AutoTypeGlobalHint</Name>
-					<Value>หากคุณต้องการให้ KeePass ค้นหาฐานข้อมูลที่ใช้งานอยู่เพื่อหารายการที่ตรงกันและพิมพ์อัตโนมัติให้ใช้ปุ่มลัด 'พิมพ์-อัตโนมัติ ทั่วโลก'</Value>
+					<Value>หากคุณต้องการให้ KeePass ค้นหาฐานข้อมูลที่ใช้งานอยู่เพื่อหารายการที่ตรงกันและ Auto-Type ให้ใช้ปุ่มลัด 'Auto-Type ส่วนกลาง'</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeMatchByTagInTitle</Name>
@@ -278,7 +282,7 @@
 				</Data>
 				<Data>
 					<Name>AutoTypeObfuscationHint</Name>
-					<Value>พิมพ์ความสับสนอัตโนมัติ อาจใช้ไม่ได้กับทุกหน้าต่าง</Value>
+					<Value>Auto-Type obfuscation อาจใช้ไม่ได้กับทุกหน้าต่าง</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypePrependInitSeqForIE</Name>
@@ -290,23 +294,23 @@
 				</Data>
 				<Data>
 					<Name>AutoTypeSelectedNoEntry</Name>
-					<Value>ในการใช้ปุ่มลัด "ประเภทรายการที่เลือกอัตโนมัติ" ก่อนอื่นคุณต้องเลือกรายการใน KeePass</Value>
+					<Value>ในการใช้ปุ่มลัด "ประเภทรายการ Auto-type" ก่อนอื่นคุณต้องเลือกรายการใน KeePass</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeSequenceInvalid</Name>
-					<Value>ลำดับการพิมพ์โนมัติที่ระบุไม่ถูกต้อง</Value>
+					<Value>ลำดับ Auto-type ที่ระบุไม่ถูกต้อง</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeUnknownPlaceholder</Name>
-					<Value>ตัวยึดตำแหน่งประเภทอัตโนมัติหรือรหัสคีย์พิเศษต่อไปนี้ ไม่เป็นที่รู้จัก/ไม่รองรับ:</Value>
+					<Value>ตัวยึดตำแหน่ง Auto-type หรือรหัสคีย์พิเศษต่อไปนี้ ไม่เป็นที่รู้จัก/ไม่รองรับ:</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeXDoToolRequired</Name>
-					<Value>ยูทิลิตี้/แพ็คเกจ 'xdotool' จำเป็นสำหรับการพิมพ์อัตโนมัติ</Value>
+					<Value>ยูทิลิตี้/แพ็คเกจ 'xdotool' จำเป็นสำหรับ Auto-type</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeXDoToolRequiredGlobalVer</Name>
-					<Value>สำหรับการพิมพ์อัตโนมัติทั่วโลกจำเป็นต้องใช้ ยูทิลิตี /แพ็คเกจ 'xdotool' (เวอร์ชัน 2.20100818.3004 หรือสูงกว่า!)</Value>
+					<Value>สำหรับ Auto-type ส่วนกลางจำเป็นต้องใช้ ยูทิลิตี /แพ็คเกจ 'xdotool' (เวอร์ชัน 2.20100818.3004 หรือสูงกว่า!)</Value>
 				</Data>
 				<Data>
 					<Name>Available</Name>
@@ -542,15 +546,15 @@
 				</Data>
 				<Data>
 					<Name>ConfigureAutoType</Name>
-					<Value>กำหนดค่าการพิมพ์อัตโนมัติ</Value>
+					<Value>กำหนดค่า Auto-type</Value>
 				</Data>
 				<Data>
 					<Name>ConfigureAutoTypeDesc</Name>
-					<Value>กำหนดค่าลักษณะการทำงานพิมพ์อัตโนมัติสำหรับรายการนี้</Value>
+					<Value>กำหนดค่าลักษณะการทำงาน Auto-type สำหรับรายการนี้</Value>
 				</Data>
 				<Data>
 					<Name>ConfigureAutoTypeItem</Name>
-					<Value>กำหนดค่ารายการพิมพ์อัตโนมัติ</Value>
+					<Value>กำหนดค่ารายการ Auto-type</Value>
 				</Data>
 				<Data>
 					<Name>ConfigureAutoTypeItemDesc</Name>
@@ -686,11 +690,11 @@
 				</Data>
 				<Data>
 					<Name>CtrlAltAConflict</Name>
-					<Value>คีย์ลัดอัตโนมัติแบบโกลบอลของ KeePass Ctrl + Alt + A ขัดแย้งกับคีย์ผสมของระบบที่สร้าง '{PARAM}'</Value>
+					<Value>Auto-type ส่วนกลางของ KeePass Ctrl + Alt + A ขัดแย้งกับคีย์ผสมของระบบที่สร้าง '{PARAM}'</Value>
 				</Data>
 				<Data>
 					<Name>CtrlAltAConflictHint</Name>
-					<Value>คุณสามารถเปลี่ยนคีย์ลัดอัตโนมัติประเภทโกลบอลเป็นคีย์ผสมอื่นได้ใน 'เครื่้องมือ' -&gt; 'ตัวเลือก' -&gt;แท็บ 'การรวบรวม'</Value>
+					<Value>คุณสามารถเปลี่ยนคีย์ Auto-type ลัดส่วนกลางเป็นคีย์ผสมอื่นได้ใน 'เครื่้องมือ' -&gt; 'ตัวเลือก' -&gt;แท็บ 'การรวบรวม'</Value>
 				</Data>
 				<Data>
 					<Name>CurrentStyle</Name>
@@ -769,6 +773,22 @@
 					<Value>ป้อนชื่อสำหรับฐานข้อมูลหรือเว้นว่างไว้</Value>
 				</Data>
 				<Data>
+					<Name>DatabaseOpenUnknownVersionAsk</Name>
+					<Value>แสดงกล่องโต้ตอบการยืนยันเมื่อเปิดไฟล์ฐานข้อมูลที่ไม่ทราบเวอร์ฟอร์แมตรอง</Value>
+				</Data>
+				<Data>
+					<Name>DatabaseOpenUnknownVersionInfo</Name>
+					<Value>เวอร์ชันฟอร์แมตของไฟล์ฐานข้อมูลที่เลือกสูงกว่าเวอร์ชันที่รองรับโดยอินสแตนซ์ KeePass ที่รันอยู่ในปัจจุบัน เป็นไปได้มากว่าไฟล์ฐานข้อมูลจะถูกสร้างขึ้นโดย KeePass เวอร์ชันที่ใหม่กว่า KeePass สามารถลองเปิดไฟล์ฐานข้อมูลได้ แต่ข้อมูลบางอย่างอาจสูญหาย </Value>
+				</Data>
+				<Data>
+					<Name>DatabaseOpenUnknownVersionQ</Name>
+					<Value>คุณต้องการลองเปิดไฟล์ฐานข้อมูล ซึ่งอาจสูญเสียข้อมูลบางอย่างหรือไม่?</Value>
+				</Data>
+				<Data>
+					<Name>DatabaseOpenUnknownVersionRec</Name>
+					<Value>เพื่อหลีกเลี่ยงการสูญเสียข้อมูล ขอแนะนำให้ติดตั้ง/ใช้งาน KeePass เวอร์ชันล่าสุด</Value>
+				</Data>
+				<Data>
 					<Name>DatabaseSettings</Name>
 					<Value>การตั้งค่าฐานข้อมูล</Value>
 				</Data>
@@ -810,11 +830,11 @@
 				</Data>
 				<Data>
 					<Name>DeleteEntriesQuestion</Name>
-					<Value>แน่ใจไหมว่าต้องการลบรายการที่เลือกอย่างถาวร</Value>
+					<Value>แน่ใจไหมว่าต้องการลบรายการที่เลือกอย่างถาวร?</Value>
 				</Data>
 				<Data>
 					<Name>DeleteEntriesQuestionSingle</Name>
-					<Value>แน่ใจไหมว่าต้องการลบรายการที่เลือกอย่างถาวร</Value>
+					<Value>แน่ใจไหมว่าต้องการลบรายการที่เลือกอย่างถาวร?</Value>
 				</Data>
 				<Data>
 					<Name>DeleteEntriesTitle</Name>
@@ -986,11 +1006,11 @@
 				</Data>
 				<Data>
 					<Name>EmptyMasterPwQuestion</Name>
-					<Value>แน่ใจไหมว่าต้องการใช้รหัสผ่านหลักที่ว่างเปล่า</Value>
+					<Value>แน่ใจไหมว่าต้องการใช้รหัสผ่านหลักที่ว่างเปล่า?</Value>
 				</Data>
 				<Data>
 					<Name>EmptyRecycleBinQuestion</Name>
-					<Value>แน่ใจไหมว่าต้องการลบรายการอย่างถาวร</Value>
+					<Value>แน่ใจไหมว่าต้องการลบรายการอย่างถาวร?</Value>
 				</Data>
 				<Data>
 					<Name>Enable</Name>
@@ -1262,7 +1282,7 @@
 				</Data>
 				<Data>
 					<Name>FileSaveQLocking</Name>
-					<Value>บันทึกการเปลี่ยนแปลงฐานข้อมูลก่อนล็อกพื้นที่ทำงานหรือไม่</Value>
+					<Value>บันทึกการเปลี่ยนแปลงฐานข้อมูลก่อนล็อกพื้นที่ทำงานหรือไม่?</Value>
 				</Data>
 				<Data>
 					<Name>FileSaveQOpCancel</Name>
@@ -1942,7 +1962,7 @@
 				</Data>
 				<Data>
 					<Name>MasterKeyChangeQ</Name>
-					<Value>คุณต้องการเปลี่ยนมาสเตอร์คีย์ตอนนี้หรือไม่</Value>
+					<Value>คุณต้องการเปลี่ยนมาสเตอร์คีย์ตอนนี้หรือไม่?</Value>
 				</Data>
 				<Data>
 					<Name>MasterKeyChangeRec</Name>
@@ -1982,7 +2002,7 @@
 				</Data>
 				<Data>
 					<Name>MatchesRegEx</Name>
-					<Value>ตรงกับนิพจน์ทั่วไป</Value>
+					<Value>ตรงกับ regular expression</Value>
 				</Data>
 				<Data>
 					<Name>MaxAttachmentSize</Name>
@@ -2010,7 +2030,7 @@
 				</Data>
 				<Data>
 					<Name>MinimizeAfterAutoType</Name>
-					<Value>ย่อขนาดหน้าต่างหลักหลังจากดำเนินการพิมพ์อัตโนมัติ</Value>
+					<Value>ย่อขนาดหน้าต่างหลักหลังจากดำเนินการ Auto-type</Value>
 				</Data>
 				<Data>
 					<Name>MinimizeAfterCopy</Name>
@@ -2041,6 +2061,10 @@
 					<Value>เพิ่ม</Value>
 				</Data>
 				<Data>
+					<Name>MoreAnd</Name>
+					<Value>และอีก {PARAM} รายการ</Value>
+				</Data>
+				<Data>
 					<Name>MoreEntries</Name>
 					<Value>อีก {PARAM} รายการ</Value>
 				</Data>
@@ -2049,8 +2073,16 @@
 					<Value>ข้อมูลมากกว่านี้</Value>
 				</Data>
 				<Data>
+					<Name>MoveDown</Name>
+					<Value>ย้ายลง</Value>
+				</Data>
+				<Data>
 					<Name>MoveToPreviousParentGroup</Name>
 					<Value>ย้ายไปที่กลุ่มผู้หลัก&amp;ก่อนหน้า</Value>
+				</Data>
+				<Data>
+					<Name>MoveUp</Name>
+					<Value>ย้ายขึ้น</Value>
 				</Data>
 				<Data>
 					<Name>MultipleValues</Name>
@@ -2250,7 +2282,7 @@
 				</Data>
 				<Data>
 					<Name>OptionsDesc</Name>
-					<Value>คุณสามารถกำหนดค่าตัวเลือกโปรแกรม KeePass ทั่วโลกได้ที่นี่</Value>
+					<Value>คุณสามารถกำหนดค่าตัวเลือกโปรแกรม KeePass ส่วนกลางได้ที่นี่</Value>
 				</Data>
 				<Data>
 					<Name>OtherPlaceholders</Name>
@@ -2350,11 +2382,11 @@
 				</Data>
 				<Data>
 					<Name>PerformGlobalAutoType</Name>
-					<Value>ดำเนินการประเภทอัตโนมัติทั่วโลก</Value>
+					<Value>ดำเนินการ Auto-type ส่วนกลาง</Value>
 				</Data>
 				<Data>
 					<Name>PerformSelectedAutoType</Name>
-					<Value>ทำการพิมพ์อัตโนมัติด้วยรายการที่เลือก</Value>
+					<Value>ทำ Auto-type ด้วยรายการที่เลือก</Value>
 				</Data>
 				<Data>
 					<Name>Periodic</Name>
@@ -2438,7 +2470,7 @@
 				</Data>
 				<Data>
 					<Name>PolicyAutoTypeWithoutContextDesc</Name>
-					<Value>อนุญาตให้พิมพ์อัตโนมัติโดยใช้คำสั่ง "ดำเนินการพิมพ์อัตโนมัติ" (Ctrl + V)</Value>
+					<Value>อนุญาตให้ Auto-type โดยใช้คำสั่ง "ดำเนินการป้อนอัตโนมัติ" (Ctrl + V)</Value>
 				</Data>
 				<Data>
 					<Name>PolicyChangeMasterKey</Name>
@@ -2658,7 +2690,7 @@
 				</Data>
 				<Data>
 					<Name>RepairModeQ</Name>
-					<Value>แน่ใจไหมว่าต้องการซ่อมแซมไฟล์ที่เลือก</Value>
+					<Value>แน่ใจไหมว่าต้องการซ่อมแซมไฟล์ที่เลือก?</Value>
 				</Data>
 				<Data>
 					<Name>RepairModeUse</Name>
@@ -2698,7 +2730,7 @@
 				</Data>
 				<Data>
 					<Name>SameKeybLayout</Name>
-					<Value>ตรวจสอบให้แน่ใจว่ารูปแบบแป้นพิมพ์เดียวกันระหว่างการพิมพ์อัตโนมัติ</Value>
+					<Value>ตรวจสอบให้แน่ใจว่ารูปแบบแป้นพิมพ์เดียวกันระหว่าง Auto-type</Value>
 				</Data>
 				<Data>
 					<Name>SampleEntry</Name>
@@ -2710,11 +2742,11 @@
 				</Data>
 				<Data>
 					<Name>SaveBeforeCloseEntry</Name>
-					<Value>คุณต้องการบันทึกการเปลี่ยนแปลงที่คุณทำกับรายการนี้หรือไม่</Value>
+					<Value>คุณต้องการบันทึกการเปลี่ยนแปลงที่คุณทำกับรายการนี้หรือไม่?</Value>
 				</Data>
 				<Data>
 					<Name>SaveBeforeCloseQuestion</Name>
-					<Value>คุณต้องการบันทึกการเปลี่ยนแปลงก่อนปิดหรือไม่</Value>
+					<Value>คุณต้องการบันทึกการเปลี่ยนแปลงก่อนปิดหรือไม่?</Value>
 				</Data>
 				<Data>
 					<Name>SaveBeforeCloseTitle</Name>
@@ -2877,8 +2909,12 @@
 					<Value>ลำดับ</Value>
 				</Data>
 				<Data>
+					<Name>Sequences</Name>
+					<Value>ลําดับ</Value>
+				</Data>
+				<Data>
 					<Name>ShowAdvAutoTypeCommands</Name>
-					<Value>แสดงคำสั่งเมนูพิมพ์อัตโนมัติเพิ่มเติมลำดับ</Value>
+					<Value>แสดงเมนูคำสั่ง Auto-type เพิ่มเติม</Value>
 				</Data>
 				<Data>
 					<Name>ShowDerefData</Name>
@@ -3066,11 +3102,11 @@
 				</Data>
 				<Data>
 					<Name>TanWizard</Name>
-					<Value>ตัวช่วยสร้าง TAN</Value>
+					<Value>วิซาร์ด TAN</Value>
 				</Data>
 				<Data>
 					<Name>TanWizardDesc</Name>
-					<Value>ด้วยตัวช่วยสร้าง TAN นี้คุณสามารถเพิ่มรายการ TAN ได้อย่างง่ายดาย</Value>
+					<Value>วิซาร์ด TAN นี้คุณสามารถเพิ่มรายการ TAN ได้อย่างง่ายดาย</Value>
 				</Data>
 				<Data>
 					<Name>TargetWindow</Name>
@@ -3533,6 +3569,10 @@
 					<Value>ข้อมูลมีขนาดใหญ่เกินกว่าจะ เข้ารหัส/ถอดรหัส อย่างปลอดภัยโดยใช้ {PARAM}</Value>
 				</Data>
 				<Data>
+					<Name>EntryLower</Name>
+					<Value>รายการ</Value>
+				</Data>
+				<Data>
 					<Name>ErrorInClipboard</Name>
 					<Value>มีการคัดลอกรายงานข้อผิดพลาดเพิ่มเติมไปยังคลิปบอร์ด</Value>
 				</Data>
@@ -3615,6 +3655,10 @@
 				<Data>
 					<Name>General</Name>
 					<Value>ทั่วไป</Value>
+				</Data>
+				<Data>
+					<Name>GroupLower</Name>
+					<Value>กลุ่ม</Value>
 				</Data>
 				<Data>
 					<Name>InvalidCompositeKey</Name>
@@ -3703,10 +3747,6 @@
 				<Data>
 					<Name>UserAgent</Name>
 					<Value>User agent</Value>
-				</Data>
-				<Data>
-					<Name>Test</Name>
-					<Value>ทดสอบ</Value>
 				</Data>
 			</Strings>
 		</StringTable>
@@ -4238,7 +4278,7 @@
 				</Data>
 				<Data>
 					<Name>m_menuToolsTanWizard</Name>
-					<Value>&amp;TAN Wizard...</Value>
+					<Value>วิซาร์ด &amp;TAN ...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuToolsDb</Name>
@@ -4310,9 +4350,6 @@
 				</Data>
 			</Strings>
 		</StringTable>
-		<StringTable Name="KeePass.Forms.MainForm.m_ctxPwList">
-			<Strings />
-		</StringTable>
 		<StringTable Name="KeePass.Forms.MainForm.m_ctxGroupList">
 			<Strings>
 				<Data>
@@ -4324,6 +4361,9 @@
 					<Value>&amp;ค้าหาโปรไฟล์</Value>
 				</Data>
 			</Strings>
+		</StringTable>
+		<StringTable Name="KeePass.Forms.MainForm.m_ctxPwList">
+			<Strings />
 		</StringTable>
 		<StringTable Name="KeePass.Forms.MainForm.m_ctxTray">
 			<Strings>
@@ -4393,6 +4433,14 @@
 				</Data>
 			</Strings>
 		</StringTable>
+		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxPwGen">
+			<Strings>
+				<Data>
+					<Name>m_ctxPwGenOpen</Name>
+					<Value>&amp;เปิดตัวสร้างรหัสผ่าน ...</Value>
+				</Data>
+			</Strings>
+		</StringTable>
 		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxDefaultTimes">
 			<Strings>
 				<Data>
@@ -4425,43 +4473,51 @@
 				</Data>
 			</Strings>
 		</StringTable>
-		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxListOperations">
+		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxStr">
 			<Strings>
 				<Data>
-					<Name>m_menuListCtxCopyFieldValue</Name>
-					<Value>&amp;คัดลอกค่าฟิลด์ไปยังคลิปบอร์ด</Value>
-				</Data>
-			</Strings>
-		</StringTable>
-		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxPwGen">
-			<Strings>
-				<Data>
-					<Name>m_ctxPwGenOpen</Name>
-					<Value>&amp;เปิดตัวสร้างรหัสผ่าน ...</Value>
-				</Data>
-			</Strings>
-		</StringTable>
-		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxStrMoveToStandard">
-			<Strings>
-				<Data>
-					<Name>m_menuListCtxMoveStandardTitle</Name>
-					<Value>ไป &amp;หัวข้อ</Value>
+					<Name>m_ctxStrCopyName</Name>
+					<Value>คัดลอก&amp;ชื่อ</Value>
 				</Data>
 				<Data>
-					<Name>m_menuListCtxMoveStandardUser</Name>
-					<Value>ไป &amp;ชื่อผู้ใช้</Value>
+					<Name>m_ctxStrCopyValue</Name>
+					<Value>คัดลอก&amp;ค่า</Value>
 				</Data>
 				<Data>
-					<Name>m_menuListCtxMoveStandardPassword</Name>
-					<Value>ไป &amp;รหัสผ่าน</Value>
+					<Name>m_ctxStrCopyItem</Name>
+					<Value>&amp;คัดลอกไอเท็ม</Value>
 				</Data>
 				<Data>
-					<Name>m_menuListCtxMoveStandardURL</Name>
-					<Value>ไป &amp;URL</Value>
+					<Name>m_ctxStrPasteItem</Name>
+					<Value>&amp;วางไอเท็ม</Value>
 				</Data>
 				<Data>
-					<Name>m_menuListCtxMoveStandardNotes</Name>
-					<Value>ถึงโน๊&amp;ต</Value>
+					<Name>m_ctxStrSelectAll</Name>
+					<Value>&amp;เลือกทั้งหมด</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxStrMoveTo</Name>
+					<Value>&amp;ย้ายไปที่</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxStrMoveToTitle</Name>
+					<Value>&amp;หัวข้อ</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxStrMoveToUserName</Name>
+					<Value>&amp;ชื่อผู้ใช้</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxStrMoveToPassword</Name>
+					<Value>&amp;รหัสผ่าน</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxStrMoveToUrl</Name>
+					<Value>UR&amp;L</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxStrMoveToNotes</Name>
+					<Value>&amp;โน้ต</Value>
 				</Data>
 			</Strings>
 		</StringTable>
@@ -4477,23 +4533,31 @@
 				</Data>
 			</Strings>
 		</StringTable>
-		<StringTable Name="KeePass.Forms.EcasTriggersForm.m_ctxTools">
+		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxAutoType">
 			<Strings>
 				<Data>
-					<Name>m_ctxToolsHelp</Name>
-					<Value>&amp;ช่วยเหลือ</Value>
+					<Name>m_ctxAutoTypeCopyWnd</Name>
+					<Value>คัดลอก&amp;หน้าต่างเป้าหมาย</Value>
 				</Data>
 				<Data>
-					<Name>m_ctxToolsCopyTriggers</Name>
-					<Value>&amp;คัดลอกทริกเกอร์ไปยังคลิปบอร์ด</Value>
+					<Name>m_ctxAutoTypeCopySeq</Name>
+					<Value>คัดลอกลําดั&amp;บ</Value>
 				</Data>
 				<Data>
-					<Name>m_ctxToolsCopySelectedTriggers</Name>
-					<Value>คัดลอก&amp;ทริกเกอร์ที่เลือกไปยังคลิปบอร์ด</Value>
+					<Name>m_ctxAutoTypeCopyItem</Name>
+					<Value>&amp;คัดลอกไอเท๋ม</Value>
 				</Data>
 				<Data>
-					<Name>m_ctxToolsPasteTriggers</Name>
-					<Value>&amp;วางทริกเกอร์จากคลิปบอร์ด</Value>
+					<Name>m_ctxAutoTypePasteItem</Name>
+					<Value>&amp;วางไอเท็ม</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxAutoTypeDup</Name>
+					<Value>&amp;ทําซํ้าไอเท็ม</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxAutoTypeSelectAll</Name>
+					<Value>เลือก&amp;ทั้งหมด</Value>
 				</Data>
 			</Strings>
 		</StringTable>
@@ -4561,8 +4625,33 @@
 				</Data>
 			</Strings>
 		</StringTable>
+		<StringTable Name="KeePass.Forms.EcasTriggersForm.m_ctxTools">
+			<Strings>
+				<Data>
+					<Name>m_ctxToolsHelp</Name>
+					<Value>&amp;ช่วยเหลือ</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxToolsCopyTriggers</Name>
+					<Value>&amp;คัดลอกทริกเกอร์ไปยังคลิปบอร์ด</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxToolsCopySelectedTriggers</Name>
+					<Value>คัดลอก&amp;ทริกเกอร์ที่เลือกไปยังคลิปบอร์ด</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxToolsPasteTriggers</Name>
+					<Value>&amp;วางทริกเกอร์จากคลิปบอร์ด</Value>
+				</Data>
+			</Strings>
+		</StringTable>
 		<StringTable Name="KeePassLib.Resources.KSRes">
-			<Strings />
+			<Strings>
+				<Data>
+					<Name>Test</Name>
+					<Value>ทดสอบ</Value>
+				</Data>
+			</Strings>
 		</StringTable>
 	</StringTables>
 	<Forms>
@@ -5189,7 +5278,7 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_rtbText" BaseHash="v1:7/7U">
+				<Control Name="m_rtbText" BaseHash="v1:B1r8">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -5199,7 +5288,7 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_rtbText" BaseHash="v1:BVWT">
+				<Control Name="m_rtbText" BaseHash="v1:JPDa">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -5263,7 +5352,7 @@
 				<Control Name="m_cmbActions" BaseHash="v1:KKak">
 					<Layout />
 				</Control>
-				<Control Name="m_lblAction" BaseHash="v1:ci/I">
+				<Control Name="m_lblAction" BaseHash="v1:Vc+/">
 					<Text>การกระทํา:</Text>
 					<Layout />
 				</Control>
@@ -5299,7 +5388,7 @@
 				<Control Name="m_cmbConditions" BaseHash="v1:PdlC">
 					<Layout />
 				</Control>
-				<Control Name="m_lblCondition" BaseHash="v1:lWuo">
+				<Control Name="m_lblCondition" BaseHash="v1:lhIr">
 					<Text>เงื่อนไข:</Text>
 					<Layout />
 				</Control>
@@ -5331,7 +5420,7 @@
 				<Control Name="m_cmbEvents" BaseHash="v1:KKak">
 					<Layout />
 				</Control>
-				<Control Name="m_lblEvent" BaseHash="v1:IlZL">
+				<Control Name="m_lblEvent" BaseHash="v1:Ylqb">
 					<Text>เหตุการณ์:</Text>
 					<Layout />
 				</Control>
@@ -5550,20 +5639,20 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.EditAutoTypeItemForm">
-			<Window Name="" BaseHash="v1:MpbZ">
-				<Text>แก้ไขรายการคีย์อัตโนมัติ</Text>
+			<Window Name="" BaseHash="v1:riEe">
+				<Text>แก้ไขรายการ Auto-Type</Text>
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:sy0S">
+				<Control Name="m_btnCancel" BaseHash="v1:Xvre">
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnHelp" BaseHash="v1:b344">
+				<Control Name="m_btnHelp" BaseHash="v1:qtcv">
 					<Text>&amp;ช่วยเหลือ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:P5r/">
+				<Control Name="m_btnOK" BaseHash="v1:OlZs">
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
@@ -5578,7 +5667,7 @@
 					<Text>คลิกปุ่มแบบเลื่อนลงทางด้านขวาเพื่อดูหน้าต่างที่เปิดอยู่</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:0X/o">
+				<Control Name="m_lblSeparator" BaseHash="v1:qncH">
 					<Layout />
 				</Control>
 				<Control Name="m_lblTargetWindow" BaseHash="v1:6E3v">
@@ -5586,7 +5675,7 @@
 					<Layout X="-95%c" />
 				</Control>
 				<Control Name="m_lnkWildcardRegexHint" BaseHash="v1:YhhY">
-					<Text>รองรับไวลด์การ์ดอย่างง่ายและนิพจน์ทั่วไป</Text>
+					<Text>รองรับไวลด์การ์ดอย่างง่ายและ regular expressions</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_rbKeySeq" BaseHash="v1:cuwF">
@@ -5600,7 +5689,7 @@
 					<Text>ใช้ลำดับการกดแป้นพิมพ์&amp;เริ่มต้นของรายการ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rtbPlaceholders" BaseHash="v1:vvPt">
+				<Control Name="m_rtbPlaceholders" BaseHash="v1:Yq7H">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -5667,11 +5756,11 @@
 					<Layout />
 				</Control>
 				<Control Name="m_grpKeyboard" BaseHash="v1:HWQK">
-					<Text>สุ่มอินพุตแป้นพิมพ์</Text>
+					<Text>การป้อนข้อมูลด้วยแป้นพิมพ์แบบสุ่ม</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_grpMouse" BaseHash="v1:LBtF">
-					<Text>สุ่มอินพุตเมาส์</Text>
+					<Text>การเลื่อนเมาส์แบบสุ่ม</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblGeneratedHint" BaseHash="v1:yrpw">
@@ -5940,11 +6029,11 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lblAutoTypeDesc" BaseHash="v1:kZQq">
-					<Text>กลุ่มย่อยและรายการทั้งหมดในกลุ่มปัจจุบันที่สืบทอดลำดับประเภทอัตโนมัติจะใช้กลุ่มที่อยู่ด้านบน</Text>
+					<Text>กลุ่มย่อยและรายการทั้งหมดในกลุ่มปัจจุบันที่สืบทอดลำดับ Auto-Type จะใช้กลุ่มที่อยู่ด้านบน</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblEnableAutoType" BaseHash="v1:LJoJ">
-					<Text>&amp;คีย์อัตโนมัติสำหรับรายการในกลุ่มนี้: </Text>
+					<Text>&amp;Auto-Type สำหรับรายการในกลุ่มนี้: </Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblEnableSearching" BaseHash="v1:qwzV">
@@ -5975,7 +6064,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_rbAutoTypeInherit" BaseHash="v1:rTyy">
-					<Text>&amp;รับลำดับการคีย์อัตโนมัติเริ่มต้นจากกลุ่มหลัก</Text>
+					<Text>&amp;รับลำดับการ Auto-Type เริ่มต้นจากกลุ่มหลัก</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_rbAutoTypeOverride" BaseHash="v1:9Chd">
@@ -5983,7 +6072,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tabAutoType" BaseHash="v1:/Lsw">
-					<Text>คีย์อัตโนมัติ</Text>
+					<Text>Auto-Type</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_tabCustomData" BaseHash="v1:R60e">
@@ -6019,38 +6108,38 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.HelpSourceForm">
-			<Window Name="" BaseHash="v1:GVLM">
+			<Window Name="" BaseHash="v1:V3P6">
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:JTh0">
+				<Control Name="m_btnCancel" BaseHash="v1:ZwTA">
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:D3d+">
+				<Control Name="m_btnOK" BaseHash="v1:aQfw">
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblIntro" BaseHash="v1:90fo">
+				<Control Name="m_lblIntro" BaseHash="v1:uPNE">
 					<Text>ใช้แหล่งความช่วยเหลือต่อไปนี้เมื่อคลิกปุ่ม "ช่วยเหลือ" ใน KeePass:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblLocal" BaseHash="v1:suiF">
+				<Control Name="m_lblLocal" BaseHash="v1:BWrv">
 					<Text>ไฟล์ช่วยเหลือภายในเครื่องเป็นสแนปชอตของเอกสารผลิตภัณฑ์ ณ จุดที่เผยแพร่เวอร์ชันผลิตภัณฑ์นี้ จะไม่อัปเดตโดยอัตโนมัติ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblOnline" BaseHash="v1:ITmx">
+				<Control Name="m_lblOnline" BaseHash="v1:3vGO">
 					<Text>ศูนย์ช่วยเหลือออนไลน์จะมีเอกสารคู่มือผลิตภัณฑ์เวอร์ชันล่าสุดเสมอ ต้องมีการเชื่อมต่ออินเทอร์เน็ต</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:RCD/">
+				<Control Name="m_lblSeparator" BaseHash="v1:breB">
 					<Layout />
 				</Control>
 				<Control Name="m_radioLocal" BaseHash="v1:bROq">
 					<Text>&amp;ไฟล์ช่วยเหลือภายในเครื่อง</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_radioOnline" BaseHash="v1:6itw">
+				<Control Name="m_radioOnline" BaseHash="v1:kKpi">
 					<Text>&amp;ศูนย์ช่วยเหลือออนไลน์</Text>
 					<Layout />
 				</Control>
@@ -6591,15 +6680,15 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lblAutoType" BaseHash="v1:1u5d">
-					<Text>คีย์อัตโนมัติส่วนกลาง:</Text>
+					<Text>Auto-Type ส่วนกลาง:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblAutoTypePassword" BaseHash="v1:as9U">
-					<Text>คีย์อัตโนมัติส่วนกลาง - รหัสผ่าน:</Text>
+					<Text>Auto-Type ส่วนกลาง - รหัสผ่าน:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblAutoTypeSelected" BaseHash="v1:It+i">
-					<Text>รายการคีย์อัตโนมัติที่เลือก:</Text>
+					<Text>รายการ Auto-Type ที่เลือก:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblBannerStyle" BaseHash="v1:0iZl">
@@ -6888,7 +6977,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lblTabularInfo" BaseHash="v1:V/Ch">
-					<Text>จัดเรียงรายการในรูปแบบตาราง แต่ละรายการจะใช้เวลาประมาณหนึ่งบรรทัด ฟิลด์ที่เลือกด้านล่างจะถูกพิมพ์ ไม่พิมพ์การกำหนดค่าประเภทอัตโนมัติ</Text>
+					<Text>จัดเรียงรายการในรูปแบบตาราง แต่ละรายการจะใช้เวลาประมาณหนึ่งบรรทัด ฟิลด์ที่เลือกด้านล่างจะถูกพิมพ์ ไม่พิมพ์การกำหนดค่า Auto-Type</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_linkDeselectAllFields" BaseHash="v1:okBL">
@@ -7017,22 +7106,26 @@
 					<Text>&amp;เพิ่ม</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnAutoTypeDelete" BaseHash="v1:v7PI">
-					<Text>&amp;ลบ</Text>
+				<Control Name="m_btnAutoTypeDelete" BaseHash="v1:oEnu">
+					<Text>ล&amp;บ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnAutoTypeDown" BaseHash="v1:gm8J">
+				<Control Name="m_btnAutoTypeDown" BaseHash="v1:yI06">
 					<Layout />
 				</Control>
 				<Control Name="m_btnAutoTypeEdit" BaseHash="v1:3BhX">
 					<Text>&amp;แก้ไข</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnAutoTypeEditDefault" BaseHash="v1:cmd4">
+				<Control Name="m_btnAutoTypeEditDefault" BaseHash="v1:WDy9">
 					<Text>แ&amp;ก้ไข</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnAutoTypeUp" BaseHash="v1:Vwsy">
+				<Control Name="m_btnAutoTypeMore" BaseHash="v1:HzqN">
+					<Text>เพิ่&amp;มเติม</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnAutoTypeUp" BaseHash="v1:f0pv">
 					<Layout />
 				</Control>
 				<Control Name="m_btnBinAdd" BaseHash="v1:fdpq">
@@ -7102,8 +7195,8 @@
 					<Text>แก้&amp;ไข</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnStrMove" BaseHash="v1:xHNA">
-					<Text>ย้า&amp;ย</Text>
+				<Control Name="m_btnStrMore" BaseHash="v1:mNau">
+					<Text>&amp;เพิ่มเติม</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnTags" BaseHash="v1:me/J">
@@ -7114,10 +7207,10 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cbAutoTypeEnabled" BaseHash="v1:A9Dl">
-					<Text>เปิดใช้งานคีย์&amp;อัตโนมัติสำหรับรายการนี้</Text>
+					<Text>เปิดใช้งาน&amp; Auto-Type สำหรับรายการนี้</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbAutoTypeObfuscation" BaseHash="v1:Dibx">
+				<Control Name="m_cbAutoTypeObfuscation" BaseHash="v1:0l04">
 					<Text>ก&amp;ารทำให้สับสนคีย์อัตโนมัติสองช่องสัญญาณ</Text>
 					<Layout />
 				</Control>
@@ -7255,7 +7348,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_rbAutoTypeSeqInherit" BaseHash="v1:eaGT">
-					<Text>&amp;รับลำดับการคีย์อัตโนมัติเริ่มต้นจากกลุ่ม</Text>
+					<Text>&amp;รับลำดับการ Auto-Type เริ่มต้นจากกลุ่ม</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_rtNotes" BaseHash="v1:cRmG">
@@ -7266,7 +7359,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tabAutoType" BaseHash="v1:k3ms">
-					<Text>คีย์อัตโนมัติ</Text>
+					<Text>Auto-Type</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_tabEntry" BaseHash="v1:q6EX">
@@ -7584,7 +7677,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_rbModeRegular" BaseHash="v1:b9Xe">
-					<Text>นิพจน์ทั่วไป</Text>
+					<Text>Regular expression</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_rbModeSimple" BaseHash="v1:i0uD">
