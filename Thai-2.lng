@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.49</ApplicationVersion>
+		<ApplicationVersion>2.50</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>47A7FB8046DA2E40B702BD868130AF94</FileUuid>
-		<LastModified>2021-09-11 18:05:20Z</LastModified>
+		<FileUuid>289CAFF133234C4696FDE5D6A0848F92</FileUuid>
+		<LastModified>2022-01-02 03:55:14Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -607,6 +607,10 @@
 				<Data>
 					<Name>CopyLink</Name>
 					<Value>คัดลอกลิงค์</Value>
+				</Data>
+				<Data>
+					<Name>CopyObject</Name>
+					<Value>คัดลอก {PARAM}</Value>
 				</Data>
 				<Data>
 					<Name>CopyOfItem</Name>
@@ -1773,7 +1777,7 @@
 					<Value>มีสองวิธีในการสร้างไฟล์คีย์ใหม่จากข้อมูลสำรองนี้</Value>
 				</Data>
 				<Data>
-					<Name>KeyFileFromBackupF</Name>
+					<Name>KeyFileFromBackupF2</Name>
 					<Value>เริ่ม KeePass คลิกที่ 'เครื่องมือ' -&gt; 'เครื่องมือขั้นสูง' -&gt; 'สร้างไฟล์คีย์' และกรอกแบบฟอร์มที่แสดงบนหน้าจอ</Value>
 				</Data>
 				<Data>
@@ -1802,7 +1806,7 @@
 				</Data>
 				<Data>
 					<Name>KeyFiles</Name>
-					<Value>ไฟล์สำคัญ</Value>
+					<Value>ไฟล์คัย์</Value>
 				</Data>
 				<Data>
 					<Name>KeyFileSafe</Name>
@@ -1819,6 +1823,10 @@
 				<Data>
 					<Name>KeyFileUseExisting</Name>
 					<Value>ใช้ไฟล์ที่มีอยู่เป็นไฟล์คีย์</Value>
+				</Data>
+				<Data>
+					<Name>KeyProvExclusive</Name>
+					<Value>ผู้ให้บริการคีย์ที่เลือกไม่อนุญาตให้รวมเข้ากับส่วนประกอบมาสเตอร์คีย์อื่นๆ</Value>
 				</Data>
 				<Data>
 					<Name>KeyProvider</Name>
@@ -1927,6 +1935,10 @@
 				<Data>
 					<Name>LockWorkspace</Name>
 					<Value>ล็อกพื้นที่ทำงาน</Value>
+				</Data>
+				<Data>
+					<Name>MacAddress</Name>
+					<Value>MAC Address</Value>
 				</Data>
 				<Data>
 					<Name>MainInstruction</Name>
@@ -2377,6 +2389,10 @@
 					<Value>วาง</Value>
 				</Data>
 				<Data>
+					<Name>Path</Name>
+					<Value>เส้นทาง</Value>
+				</Data>
+				<Data>
 					<Name>PerformAutoType</Name>
 					<Value>ทำการพิมพ์&amp;อัตโนมัติ</Value>
 				</Data>
@@ -2577,6 +2593,10 @@
 					<Value>ป้อนชื่อสำหรับโปรไฟล์ใหม่หรือเลือกโปรไฟล์ที่มีอยู่เพื่อเขียนทับ:</Value>
 				</Data>
 				<Data>
+					<Name>PwGenOpen</Name>
+					<Value>เปิดโปรแกรมสร้างรหัสผ่าน...</Value>
+				</Data>
+				<Data>
 					<Name>Quality</Name>
 					<Value>คุณภาพ</Value>
 				</Data>
@@ -2607,10 +2627,6 @@
 				<Data>
 					<Name>QuickSearchTb</Name>
 					<Value>ค้นหาด่วน (แถบเครื่องมือ)</Value>
-				</Data>
-				<Data>
-					<Name>RandomMacAddress</Name>
-					<Value>ที่อยู่ MAC แบบสุ่ม</Value>
 				</Data>
 				<Data>
 					<Name>Ready</Name>
@@ -2666,7 +2682,7 @@
 				</Data>
 				<Data>
 					<Name>RememberKeySources</Name>
-					<Value>จดจำแหล่งที่มาหลัก (พาธ ไฟล์คีย์ชื่อผู้ให้บริการ ... )</Value>
+					<Value>จดจำแหล่งที่มาหลัก (เส้นทางไฟล์คีย์, ชื่อผู้ให้บริการ, ... ... )</Value>
 				</Data>
 				<Data>
 					<Name>RememberWorkingDirectories</Name>
@@ -2822,7 +2838,7 @@
 				</Data>
 				<Data>
 					<Name>SearchKeyFilesAlsoOnRemovable</Name>
-					<Value>ค้นหาไฟล์คีย์โดยอัตโนมัติบนสื่อแบบถอดได้</Value>
+					<Value>ค้นหาไฟล์คีย์โดยอัตโนมัติบนสื่อที่ถอดออกได้</Value>
 				</Data>
 				<Data>
 					<Name>SearchQuickPrompt</Name>
@@ -2839,6 +2855,14 @@
 				<Data>
 					<Name>SecDeskFileDialogHint</Name>
 					<Value>หมายเหตุ: KeePass จะแสดงกล่องโต้ตอบไฟล์เบราว์เซอร์แบบธรรมดานี้เนื่องจากกล่องโต้ตอบไฟล์ Windows มาตรฐานไม่สามารถแสดงบนเดสก์ท็อปที่ปลอดภัยได้ด้วยเหตุผลด้านความปลอดภัย</Value>
+				</Data>
+				<Data>
+					<Name>SecDeskOpContinueOnNormal</Name>
+					<Value>KeePass จะยกเลิกกล่องโต้ตอบปัจจุบันและเปลี่ยนเป็นเดสก์ท็อปปกติ การดำเนินการที่ร้องขอจะดำเนินการบนเดสก์ท็อปปกติ</Value>
+				</Data>
+				<Data>
+					<Name>SecDeskOpUnsupported</Name>
+					<Value>การดำเนินการนี้ไม่สามารถทำได้บนเดสก์ท็อปที่ปลอดภัย</Value>
 				</Data>
 				<Data>
 					<Name>SecDeskOtherSwitched</Name>
@@ -2947,6 +2971,10 @@
 				<Data>
 					<Name>ShowMore</Name>
 					<Value>แสดงมากขึ้น</Value>
+				</Data>
+				<Data>
+					<Name>ShowWithFileManager</Name>
+					<Value>&amp;แสดงด้วยตัวจัดการไฟล์</Value>
 				</Data>
 				<Data>
 					<Name>SimilarPasswords</Name>
@@ -4309,8 +4337,8 @@
 					<Value>&amp;เครื่องมือขั้นสูง</Value>
 				</Data>
 				<Data>
-					<Name>m_menuToolsCreateKeyFile</Name>
-					<Value>&amp;สร้างคีย์ไฟล์...</Value>
+					<Name>m_menuToolsRecreateKeyFile</Name>
+					<Value>&amp;สร้างไฟล์คีย์ใหม่จากข้อมูลสำรองที่พิมพ์ไว้...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuToolsTriggers</Name>
@@ -4430,14 +4458,6 @@
 				<Data>
 					<Name>m_ctxToolsFieldRefsInNotes</Name>
 					<Value>ในฟิลด์&amp;โน๊ต</Value>
-				</Data>
-			</Strings>
-		</StringTable>
-		<StringTable Name="KeePass.Forms.PwEntryForm.m_ctxPwGen">
-			<Strings>
-				<Data>
-					<Name>m_ctxPwGenOpen</Name>
-					<Value>&amp;เปิดตัวสร้างรหัสผ่าน ...</Value>
 				</Data>
 			</Strings>
 		</StringTable>
@@ -5704,6 +5724,9 @@
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_btnGenPw" BaseHash="v1:7Qer">
+					<Layout />
+				</Control>
 				<Control Name="m_btnHelp" BaseHash="v1:P7IP">
 					<Text>&amp;ช่วยเหลือ</Text>
 					<Layout />
@@ -5712,11 +5735,11 @@
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbProtect" BaseHash="v1:PbcZ">
+				<Control Name="m_cbProtect" BaseHash="v1:Bw7n">
 					<Text>&amp;เปิดใช้งานการป้องกันในหน่วยความจำ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cmbStringName" BaseHash="v1:bNbt">
+				<Control Name="m_cmbName" BaseHash="v1:bNbt">
 					<Layout />
 				</Control>
 				<Control Name="m_lblIDIntro" BaseHash="v1:4GcX">
@@ -5737,7 +5760,7 @@
 				<Control Name="m_lblValidationInfo" BaseHash="v1:RN57">
 					<Layout />
 				</Control>
-				<Control Name="m_richStringValue" BaseHash="v1:tBqb">
+				<Control Name="m_rtbValue" BaseHash="v1:tBqb">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6324,12 +6347,12 @@
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCreate" BaseHash="v1:yalR">
-					<Text>ตกลง</Text>
-					<Layout />
-				</Control>
 				<Control Name="m_btnHelp" BaseHash="v1:Vs3C">
 					<Text>&amp;ช่วยเหลือ</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnOK" BaseHash="v1:yalR">
+					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnOpenKeyFile" BaseHash="v1:w4Qh">
@@ -6340,7 +6363,7 @@
 					<Text>&amp;สร้าง...</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbExpert" BaseHash="v1:VB+G">
+				<Control Name="m_cbExpert" BaseHash="v1:dZmV">
 					<Text>แสดงตัวเลือก&amp;ผู้เชี่ยวชาญ:</Text>
 					<Layout />
 				</Control>
@@ -6348,16 +6371,16 @@
 					<Text>***</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbKeyFile" BaseHash="v1:znGu">
-					<Text>&amp;คีย์ไฟล์/ผู้ให้บริการ</Text>
+				<Control Name="m_cbKeyFile" BaseHash="v1:eT82">
+					<Text>&amp;คีย์ไฟล์/ผู้ให้บริการ:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cbPassword" BaseHash="v1:k3D8">
 					<Text>&amp;รหัสผ่านหลัก:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbUserAccount" BaseHash="v1:QYYF">
-					<Text>บัญชีผู้ใช้ Windows</Text>
+				<Control Name="m_cbUserAccount" BaseHash="v1:yj2V">
+					<Text>&amp;บัญชีผู้ใช้ Windows</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cmbKeyFile" BaseHash="v1:npk8">
@@ -6480,52 +6503,52 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.KeyPromptForm">
-			<Window Name="" BaseHash="v1:kbxd">
+			<Window Name="" BaseHash="v1:xzuc">
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:Ye5Q">
+				<Control Name="m_btnCancel" BaseHash="v1:M9VX">
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnExit" BaseHash="v1:7lXZ">
+				<Control Name="m_btnExit" BaseHash="v1:67ZU">
 					<Text>อ&amp;อก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnHelp" BaseHash="v1:zT5m">
+				<Control Name="m_btnHelp" BaseHash="v1:DMCS">
 					<Text>&amp;ช่วยหลือ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:2uQj">
+				<Control Name="m_btnOK" BaseHash="v1:VWeP">
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOpenKeyFile" BaseHash="v1:/cId">
+				<Control Name="m_btnOpenKeyFile" BaseHash="v1:jDHW">
 					<Layout />
 				</Control>
 				<Control Name="m_cbHidePassword" BaseHash="v1:VveN">
 					<Text>***</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbKeyFile" BaseHash="v1:wKVa">
-					<Text>&amp;คีย์ไฟล์</Text>
+				<Control Name="m_cbKeyFile" BaseHash="v1:Jtl1">
+					<Text>&amp;คีย์ไฟล์/ผู้ให้บริการ:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbPassword" BaseHash="v1:uw68">
+				<Control Name="m_cbPassword" BaseHash="v1:wEdv">
 					<Text>รหัสผ่านห&amp;ลัก:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbUserAccount" BaseHash="v1:5imX">
+				<Control Name="m_cbUserAccount" BaseHash="v1:eEwS">
 					<Text>บัญชี&amp;ผู้ใช้ Windows</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cmbKeyFile" BaseHash="v1:IySi">
+				<Control Name="m_cmbKeyFile" BaseHash="v1:up1m">
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:Wdxg">
+				<Control Name="m_lblSeparator" BaseHash="v1:QcIS">
 					<Layout />
 				</Control>
-				<Control Name="m_tbPassword" BaseHash="v1:FAk+">
+				<Control Name="m_tbPassword" BaseHash="v1:E7tA">
 					<Layout />
 				</Control>
 			</ChildControls>
