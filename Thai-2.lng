@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.51</ApplicationVersion>
+		<ApplicationVersion>2.52</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>C4FCD956A604D64AA928D5430725A8AF</FileUuid>
-		<LastModified>2022-05-01 05:16:13Z</LastModified>
+		<FileUuid>EFDF66C6C0B39841A4E08C5F6D7AB34E</FileUuid>
+		<LastModified>2022-09-03 17:22:33Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -91,10 +91,6 @@
 				<Data>
 					<Name>AllSupportedFiles</Name>
 					<Value>ไฟล์ที่รองรับทั้งหมด</Value>
-				</Data>
-				<Data>
-					<Name>AlternatingBgColors</Name>
-					<Value>ใช้สลับสีพื้นหลังของรายการ</Value>
 				</Data>
 				<Data>
 					<Name>Application</Name>
@@ -625,6 +621,10 @@
 					<Value>คัดลอกรา&amp;ยการ (ไม่เข้ารหัส)</Value>
 				</Data>
 				<Data>
+					<Name>CopyInitialPasswordDesc</Name>
+					<Value>คัดลอกรหัสผ่านที่เป็นปัจจุบันเมื่อเปิดกล่องโต้ตอบ</Value>
+				</Data>
+				<Data>
 					<Name>CopyLink</Name>
 					<Value>คัดลอกลิงค์</Value>
 				</Data>
@@ -727,6 +727,10 @@
 				<Data>
 					<Name>Custom</Name>
 					<Value>กำหนดเอง</Value>
+				</Data>
+				<Data>
+					<Name>CustomColor</Name>
+					<Value>สีกําหนดเอง</Value>
 				</Data>
 				<Data>
 					<Name>CustomFields</Name>
@@ -843,6 +847,10 @@
 				<Data>
 					<Name>Default</Name>
 					<Value>ค่าเริ่มต้น</Value>
+				</Data>
+				<Data>
+					<Name>DefaultColor</Name>
+					<Value>สีค่าเริ่มต้น</Value>
 				</Data>
 				<Data>
 					<Name>Delete</Name>
@@ -1409,6 +1417,10 @@
 					<Value>ค้นหารายการ</Value>
 				</Data>
 				<Data>
+					<Name>FixByReinstall</Name>
+					<Value>เพื่อแก้ไขปัญหานี้ ขอแนะนำให้ติดตั้ง KeePass ใหม่</Value>
+				</Data>
+				<Data>
 					<Name>FocusQuickFindOnRestore</Name>
 					<Value>เน้นช่องค้นหาด่วนเมื่อกู้คืนจากแถบงาน</Value>
 				</Data>
@@ -1563,6 +1575,10 @@
 				<Data>
 					<Name>History</Name>
 					<Value>ประวัติ</Value>
+				</Data>
+				<Data>
+					<Name>HistoryBased</Name>
+					<Value>อ้างอิงจากประวัติ</Value>
 				</Data>
 				<Data>
 					<Name>HmacOtp</Name>
@@ -2381,6 +2397,10 @@
 					<Value>คุณสามารถกำหนดค่าตัวเลือกโปรแกรม KeePass ส่วนกลางได้ที่นี่</Value>
 				</Data>
 				<Data>
+					<Name>OrEarlier</Name>
+					<Value>หรือก่อนหน้า</Value>
+				</Data>
+				<Data>
 					<Name>OtherPlaceholders</Name>
 					<Value>ตัวยึดตำแหน่งอื่น ๆ</Value>
 				</Data>
@@ -2903,6 +2923,10 @@
 				<Data>
 					<Name>SavedDatabaseFile</Name>
 					<Value>ไฟล์ฐานข้อมูลที่บันทึกไว้</Value>
+				</Data>
+				<Data>
+					<Name>SaveFilesTo</Name>
+					<Value>บันทึกไฟล์ไปที่</Value>
 				</Data>
 				<Data>
 					<Name>SaveForceSync</Name>
@@ -4129,10 +4153,6 @@
 					<Value>ไฟล์แ&amp;นบ</Value>
 				</Data>
 				<Data>
-					<Name>m_menuEntrySaveAttachedFiles</Name>
-					<Value>บันทึกไฟ&amp;ล์ที่แนบไปยัง ...</Value>
-				</Data>
-				<Data>
 					<Name>m_menuEntryPerformAutoType</Name>
 					<Value>ทำการ Auto&amp;-Type</Value>
 				</Data>
@@ -4498,6 +4518,10 @@
 				<Data>
 					<Name>m_ctxToolsHelp</Name>
 					<Value>&amp;ช่วยเหลือ</Value>
+				</Data>
+				<Data>
+					<Name>m_ctxToolsCopyInitialPassword</Name>
+					<Value>คัดลอกรหั&amp;สผ่านเริ่มต้น</Value>
 				</Data>
 				<Data>
 					<Name>m_ctxToolsUrlHelp</Name>
@@ -5792,8 +5816,8 @@
 				<Control Name="m_cmbName" BaseHash="v1:bNbt">
 					<Layout />
 				</Control>
-				<Control Name="m_lblIDIntro" BaseHash="v1:4GcX">
-					<Text>ช่องสตริงประกอบด้วยชื่อและค่า ชื่อสตริงช่องคือสตริงทั่วไปที่อธิบายช่อง ("ชื่อผู้ใช้", "หมายเลขบัตรเครดิต", ... ) ชื่อต้องไม่ซ้ำกัน รายการดังตัวอย่างไม่สามารถมีช่องสตริงสองช่องชื่อ "URL"</Text>
+				<Control Name="m_lblIDIntro" BaseHash="v1:1pzL">
+					<Text>ฟิลด์สตริงประกอบด้วยชื่อและค่า ชื่อควรอธิบายฟิลด์ (เช่น "BIC", "ที่อยู่ไปรษณีย์", ...) และต้องไม่ซ้ำกัน (ภายในรายการ) ตัวอย่างเช่น รายการต้องไม่มีสองฟิลด์ชื่อ "URL"</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblSeparator" BaseHash="v1:N+8F">
@@ -6672,7 +6696,7 @@
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnAltColor" BaseHash="v1:QXw1">
+				<Control Name="m_btnAltColor" BaseHash="v1:5e3x">
 					<Layout />
 				</Control>
 				<Control Name="m_btnCancel" BaseHash="v1:fIik">
@@ -6709,10 +6733,6 @@
 					<Text>การแทนที่ &amp;URL...</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbAltColor" BaseHash="v1:OjA2">
-					<Text>กําหนด &amp;alt. item สีเอง:</Text>
-					<Layout />
-				</Control>
 				<Control Name="m_cbAutoRun" BaseHash="v1:U9b8">
 					<Text>เรียกใช้ KeePass เมื่อเริ่มต้น Windows (ผู้&amp;ใช้ปัจจุบัน)</Text>
 					<Layout />
@@ -6739,6 +6759,9 @@
 				</Control>
 				<Control Name="m_cbPasswordFont" BaseHash="v1:9DQu">
 					<Text>ฟอนต์รหั&amp;สผ่านกําหนดเอง:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_cmbAltColor" BaseHash="v1:bb+F">
 					<Layout />
 				</Control>
 				<Control Name="m_cmbBannerStyle" BaseHash="v1:3D8q">
@@ -6780,6 +6803,10 @@
 					<Layout />
 				</Control>
 				<Control Name="m_hkShowWindow" BaseHash="v1:lc1f">
+					<Layout />
+				</Control>
+				<Control Name="m_lblAltColor" BaseHash="v1:GvOv">
+					<Text>&amp;Alt. สีพื้นหลังของรายการ:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblAutoType" BaseHash="v1:1u5d">
@@ -7504,7 +7531,7 @@
 					<Text>สร้าง:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblCreatedData" BaseHash="v1:khNf">
+				<Control Name="m_lblCreatedData" BaseHash="v1:tC3L">
 					<Layout />
 				</Control>
 				<Control Name="m_lblCustomAutoType" BaseHash="v1:nrW9">
@@ -7523,7 +7550,7 @@
 					<Text>แก้ไข:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblModifiedData" BaseHash="v1:mxir">
+				<Control Name="m_lblModifiedData" BaseHash="v1:ThYz">
 					<Layout />
 				</Control>
 				<Control Name="m_lblNotes" BaseHash="v1:i8wp">
@@ -7538,12 +7565,19 @@
 					<Text>รหัส&amp;ผ่าน:</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_lblPasswordModified" BaseHash="v1:2ITO">
+					<Text>แก้ไขรหัสผ่าน:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblPasswordModifiedData" BaseHash="v1:XhKe">
+					<Layout />
+				</Control>
 				<Control Name="m_lblPasswordRepeat" BaseHash="v1:B5tI">
 					<Text>ใส่ซํ้&amp;า:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblPrev" BaseHash="v1:Lzya">
-					<Text>รุ่นก่อ&amp;นหน้า:</Text>
+				<Control Name="m_lblPrev" BaseHash="v1:/qCP">
+					<Text>&amp;เวอร์ชันก่อนหน้า:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblQuality" BaseHash="v1:kHJ+">
@@ -7593,7 +7627,7 @@
 				<Control Name="m_lvCustomData" BaseHash="v1:AKj8">
 					<Layout />
 				</Control>
-				<Control Name="m_lvHistory" BaseHash="v1:vZyu">
+				<Control Name="m_lvHistory" BaseHash="v1:i0TL">
 					<Layout />
 				</Control>
 				<Control Name="m_lvStrings" BaseHash="v1:djl9">
