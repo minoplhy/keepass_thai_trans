@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.53</ApplicationVersion>
+		<ApplicationVersion>2.54</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>B9C80475B9B6D549919F07DF59A37341</FileUuid>
-		<LastModified>2023-01-03 12:19:19Z</LastModified>
+		<FileUuid>6D87A38C750F924A950819B4098EBF2A</FileUuid>
+		<LastModified>2023-05-27 15:36:22Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -61,6 +61,10 @@
 					<Value>สร้าง string field ใหม่สําหรับรายการนี้</Value>
 				</Data>
 				<Data>
+					<Name>AdminPassword</Name>
+					<Value>รหัสผ่านผู้ดูแลระบบ</Value>
+				</Data>
+				<Data>
 					<Name>Advanced</Name>
 					<Value>ขั้นสูง</Value>
 				</Data>
@@ -95,6 +99,10 @@
 				<Data>
 					<Name>AllSupportedFiles</Name>
 					<Value>ไฟล์ที่รองรับทั้งหมด</Value>
+				</Data>
+				<Data>
+					<Name>AllUsers</Name>
+					<Value>ผู้ใช้ทั้งหมด</Value>
 				</Data>
 				<Data>
 					<Name>Application</Name>
@@ -361,6 +369,10 @@
 					<Value>{PARAM} บิต</Value>
 				</Data>
 				<Data>
+					<Name>Blue</Name>
+					<Value>นํ้าเงิน</Value>
+				</Data>
+				<Data>
 					<Name>Bold</Name>
 					<Value>ตัวหนา</Value>
 				</Data>
@@ -461,6 +473,10 @@
 					<Value>ล้างคลิปบอร์ดเมื่อปิด KeePass</Value>
 				</Data>
 				<Data>
+					<Name>ClipboardClearTime</Name>
+					<Value>&amp;เวลาล้างคลิปบอร์ดอัตโนมัติ (วินาที; รายการหลัก)</Value>
+				</Data>
+				<Data>
 					<Name>ClipboardDataCopied</Name>
 					<Value>คัดลอกข้อมูลไปยังคลิปบอร์ดแล้ว</Value>
 				</Data>
@@ -553,6 +569,30 @@
 					<Value>การเปลี่ยนแปลงการ กำหนดค่า/นโยบาย จะมีผลกับคุณเท่านั้น แฟล็กนโยบายที่บังคับใช้โดยผู้ดูแลระบบจะถูกรีเซ็ตหลังจากรีสตาร์ท KeePass</Value>
 				</Data>
 				<Data>
+					<Name>ConfigEnfAdminUac</Name>
+					<Value>สิทธิ์ในการเขียนไฟล์การกำหนดค่าที่บังคับใช้อาจต้องได้รับอนุญาตจากผู้ดูแลระบบ กล่องโต้ตอบการควบคุมบัญชีผู้ใช้จะปรากฏขึ้น หากจำเป็น</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfAllUsers</Name>
+					<Value>ไฟล์การกำหนดค่าจะบังคับใช้กับผู้ใช้ทั้งหมดที่ใช้การติดตั้ง KeePass นี้ ดังนั้น ตรวจสอบให้แน่ใจว่ารายการของคุณเหมาะสำหรับผู้ใช้ทุกคน</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfChangeValue</Name>
+					<Value>หากคุณต้องการเปลี่ยนค่าของตัวเลือกที่บังคับใช้ ให้ปิดใช้งานการบังคับใช้ (โดยใช้กล่องโต้ตอบนี้) เปลี่ยนค่า (โดยใช้กล่องโต้ตอบตัวเลือก) และเปิดใช้งานการบังคับใช้อีกครั้ง (โดยใช้กล่องโต้ตอบนี้)</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfDialogSubset</Name>
+					<Value>กล่องโต้ตอบนี้รองรับเพียงส่วนย่อยของตัวเลือกทั้งหมด สามารถบังคับใช้ตัวเลือกเพิ่มเติมได้โดยแก้ไขไฟล์การกำหนดค่าที่บังคับใช้โดยใช้ตัวแก้ไข XML/text</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfEdit</Name>
+					<Value>แก้ไขไฟล์การกำหนดค่าที่บังคับใช้</Value>
+				</Data>
+				<Data>
+					<Name>ConfigEnfSaveItemsAbout</Name>
+					<Value>คุณกำลังจะบันทึกรายการไปยังไฟล์การกำหนดค่าที่บังคับใช้</Value>
+				</Data>
+				<Data>
 					<Name>ConfigError</Name>
 					<Value>ข้อผิดพลาดในการกำหนดค่า</Value>
 				</Data>
@@ -595,6 +635,10 @@
 				<Data>
 					<Name>ConfigureOnNewDatabase3</Name>
 					<Value>กำหนดค่าฐานข้อมูลใหม่</Value>
+				</Data>
+				<Data>
+					<Name>ConfirmExport</Name>
+					<Value>ยืนยันการส่งออก</Value>
 				</Data>
 				<Data>
 					<Name>ConsiderDashesEq</Name>
@@ -791,6 +835,10 @@
 				<Data>
 					<Name>Cut</Name>
 					<Value>ตัด</Value>
+				</Data>
+				<Data>
+					<Name>Dark</Name>
+					<Value>มืด</Value>
 				</Data>
 				<Data>
 					<Name>Data</Name>
@@ -1117,6 +1165,14 @@
 					<Value>ลงท้ายด้วย</Value>
 				</Data>
 				<Data>
+					<Name>Enforce</Name>
+					<Value>บังคับใช้</Value>
+				</Data>
+				<Data>
+					<Name>EnforceOptions</Name>
+					<Value>ตัวเลือกการบังคับใช้</Value>
+				</Data>
+				<Data>
 					<Name>EnterCompositeKey</Name>
 					<Value>ป้อนมาสเตอร์คีย์</Value>
 				</Data>
@@ -1199,6 +1255,10 @@
 				<Data>
 					<Name>ExpiredEntriesCanMatch</Name>
 					<Value>รายการที่หมดอายุสามารถจับคู่ได้</Value>
+				</Data>
+				<Data>
+					<Name>ExpiryDefaultDays</Name>
+					<Value>ตามค่าเริ่มต้น &amp;รายการใหม่จะหมดอายุในจำนวนวันต่อไปนี้</Value>
 				</Data>
 				<Data>
 					<Name>ExpiryTime</Name>
@@ -1793,6 +1853,18 @@
 					<Value>ตัวเอียง</Value>
 				</Data>
 				<Data>
+					<Name>ItemsCheckEnable</Name>
+					<Value>หากคุณต้องการใช้รายการเหล่านี้ ให้เปิดกล่องโต้ตอบที่เกี่ยวข้อง ตรวจสอบรายการ (เกี่ยวกับความปลอดภัย ความเป็นส่วนตัว ฟังก์ชันการทำงาน ความเข้ากันได้ ฯลฯ) และเปิดใช้งาน</Value>
+				</Data>
+				<Data>
+					<Name>ItemsDisabled</Name>
+					<Value>รายการต่อไปนี้ถูกปิดใช้งาน:</Value>
+				</Data>
+				<Data>
+					<Name>ItemsNoSensitiveEsp</Name>
+					<Value>โดยเฉพาะอย่างยิ่ง รายการไม่ควรมีข้อมูลที่ละเอียดอ่อนใดๆ (ด้วยเหตุผลด้านความปลอดภัย/ความเป็นส่วนตัว)</Value>
+				</Data>
+				<Data>
 					<Name>Iterations</Name>
 					<Value>การทำซ้ำ</Value>
 				</Data>
@@ -1989,6 +2061,10 @@
 					<Value>KeePass เวอร์ชันล่าสุดสามารถพบได้บนเว็บไซต์ KeePass</Value>
 				</Data>
 				<Data>
+					<Name>Light</Name>
+					<Value>สว่าง</Value>
+				</Data>
+				<Data>
 					<Name>LimitSingleInstance</Name>
 					<Value>จำกัด เฉพาะอินสแตนซ์เดียว</Value>
 				</Data>
@@ -2011,6 +2087,14 @@
 				<Data>
 					<Name>LngInAppDirQ</Name>
 					<Value>คุณต้องการเปิดไดเร็กทอรีแอปพลิเคชัน (เพื่อย้ายหรือลบไฟล์ภาษา) หรือไม่?</Value>
+				</Data>
+				<Data>
+					<Name>LockAfterGlobalTime</Name>
+					<Value>ล็อคพื้นที่ทำงานหลังจากผู้ใช้ส่วนกลางไม่ได้ใช้งาน (วินาที)</Value>
+				</Data>
+				<Data>
+					<Name>LockAfterTime</Name>
+					<Value>&amp;ล็อกพื้นที่ทำงานหลังจากไม่มีการใช้งาน KeePass (วินาที)</Value>
 				</Data>
 				<Data>
 					<Name>Locked</Name>
@@ -2665,6 +2749,10 @@
 					<Value>ดูที่เว็บไซต์ปลั๊กอินสำหรับเวอร์ชันที่เหมาะสม</Value>
 				</Data>
 				<Data>
+					<Name>Policy</Name>
+					<Value>นโยบาย</Value>
+				</Data>
+				<Data>
 					<Name>PolicyAutoTypeDesc</Name>
 					<Value>อนุญาตให้พิมพ์รายการอัตโนมัติไปยังหน้าต่างอื่น ๆ</Value>
 				</Data>
@@ -2791,6 +2879,10 @@
 				<Data>
 					<Name>PwGenOpen</Name>
 					<Value>เปิดโปรแกรมสร้างรหัสผ่าน...</Value>
+				</Data>
+				<Data>
+					<Name>PwGenProfiles</Name>
+					<Value>โปรไฟล์ตัวสร้างรหัสผ่าน</Value>
 				</Data>
 				<Data>
 					<Name>Quality</Name>
@@ -4511,6 +4603,10 @@
 				<Data>
 					<Name>m_menuToolsRecreateKeyFile</Name>
 					<Value>&amp;สร้างไฟล์คีย์ใหม่จากข้อมูลสำรองที่พิมพ์ไว้...</Value>
+				</Data>
+				<Data>
+					<Name>m_menuToolsOptionsEnf</Name>
+					<Value>&amp;ตัวเลิอกการบังคับใช้...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuToolsTriggers</Name>
@@ -6766,6 +6862,41 @@
 				</Control>
 			</ChildControls>
 		</Form>
+		<Form FullName="KeePass.Forms.OptionsEnfForm">
+			<Window Name="" BaseHash="v1:YwXY">
+				<Layout />
+			</Window>
+			<ChildControls>
+				<Control Name="m_btnCancel" BaseHash="v1:SA62">
+					<Text>ยกเลิก</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnOK" BaseHash="v1:gEGp">
+					<Text>ตกลง</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblEnforce" BaseHash="v1:SlgC">
+					<Layout />
+				</Control>
+				<Control Name="m_lblInfo" BaseHash="v1:kD9M">
+					<Layout />
+				</Control>
+				<Control Name="m_lnkConfigEnf" BaseHash="v1:XKzu">
+					<Layout />
+				</Control>
+				<Control Name="m_lnkEnfAll" BaseHash="v1:7nA1">
+					<Text>ทั้งหมด</Text>
+					<Layout X="-5%c" />
+				</Control>
+				<Control Name="m_lnkEnfNone" BaseHash="v1:U0If">
+					<Text>ไม่มี</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lvMain" BaseHash="v1:m3Zp">
+					<Layout />
+				</Control>
+			</ChildControls>
+		</Form>
 		<Form FullName="KeePass.Forms.OptionsForm">
 			<Window Name="" BaseHash="v1:0Bm7">
 				<Text>ตัวเลือก</Text>
@@ -6813,24 +6944,20 @@
 					<Text>เรียกใช้ KeePass เมื่อเริ่มต้น Windows (ผู้&amp;ใช้ปัจจุบัน)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbClipClearTime" BaseHash="v1:AYSk">
-					<Text>&amp;เวลาล้างคลิปบอร์ดอัตโนมัติ (วินาที; รายการหลัก):</Text>
+				<Control Name="m_cbClipClearTime" BaseHash="v1:uwT+">
 					<Layout />
 				</Control>
-				<Control Name="m_cbDefaultExpireDays" BaseHash="v1:Lp5Q">
-					<Text>ตามค่าเริ่มต้น ร&amp;ายการใหม่จะหมดอายุในจำนวนวันต่อไปนี้:</Text>
+				<Control Name="m_cbDefaultExpireDays" BaseHash="v1:ZnDP">
 					<Layout />
 				</Control>
 				<Control Name="m_cbListFont" BaseHash="v1:h2s6">
 					<Text>ร&amp;ายการฟอนต์ที่กําหนดเอง:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbLockAfterGlobalTime" BaseHash="v1:5knj">
-					<Text>&amp;ล็อกพื้นที่ทำงานหลังจากไร้การใช้งานของผู้ใช้ส่วนกลาง (วินาที):</Text>
+				<Control Name="m_cbLockAfterGlobalTime" BaseHash="v1:rh1R">
 					<Layout />
 				</Control>
-				<Control Name="m_cbLockAfterTime" BaseHash="v1:h32g">
-					<Text>ล็อก&amp;พื้นที่ทำงานหลังจากไม่มีการใช้งาน KeePass (วินาที):</Text>
+				<Control Name="m_cbLockAfterTime" BaseHash="v1:zUas">
 					<Layout />
 				</Control>
 				<Control Name="m_cbPasswordFont" BaseHash="v1:9DQu">
@@ -7005,10 +7132,6 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tabMain" BaseHash="v1:T4ED">
-					<Layout />
-				</Control>
-				<Control Name="m_tabPolicy" BaseHash="v1:dNPM">
-					<Text>นโยบาย</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_tabSecurity" BaseHash="v1:3P5U">
@@ -7797,10 +7920,13 @@
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnProfileAdd" BaseHash="v1:F9LG">
+				<Control Name="m_btnProfileAdd" BaseHash="v1:YmZH">
 					<Layout />
 				</Control>
-				<Control Name="m_btnProfileRemove" BaseHash="v1:RhaS">
+				<Control Name="m_btnProfileEnforce" BaseHash="v1:RhaS">
+					<Layout />
+				</Control>
+				<Control Name="m_btnProfileRemove" BaseHash="v1:oOa/">
 					<Layout />
 				</Control>
 				<Control Name="m_cbBrackets" BaseHash="v1:Cc7q">
@@ -7858,7 +7984,7 @@
 				<Control Name="m_cmbCustomAlgo" BaseHash="v1:CHhZ">
 					<Layout />
 				</Control>
-				<Control Name="m_cmbProfiles" BaseHash="v1:HJoV">
+				<Control Name="m_cmbProfiles" BaseHash="v1:yF5p">
 					<Layout />
 				</Control>
 				<Control Name="m_grpCurOpt" BaseHash="v1:5MyR">
@@ -8281,7 +8407,7 @@
 				</Control>
 				<Control Name="m_cbOverrideAll" BaseHash="v1:9k8N">
 					<Text>&amp;แทนที่ URL รายการทั้งหมด:</Text>
-					<Layout />
+					<Layout X="-44%c" />
 				</Control>
 				<Control Name="m_lblSep" BaseHash="v1:go0v">
 					<Layout />
