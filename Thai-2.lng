@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.47</ApplicationVersion>
+		<ApplicationVersion>2.48</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>4DD01693846F954CA238CB708D210E32</FileUuid>
-		<LastModified>2021-01-09 08:08:19Z</LastModified>
+		<FileUuid>229A2CAF3A66274685045B1D320F7F8C</FileUuid>
+		<LastModified>2021-05-06 06:42:42Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -1593,6 +1593,10 @@
 					<Value>เข้ากันไม่ได้กับการเรียงลำดับ</Value>
 				</Data>
 				<Data>
+					<Name>Inherited</Name>
+					<Value>ได้รับการถ่ายทอด</Value>
+				</Data>
+				<Data>
 					<Name>InheritSettingFromParent</Name>
 					<Value>รับการตั้งค่าจากระดับบนสุด</Value>
 				</Data>
@@ -2043,6 +2047,10 @@
 				<Data>
 					<Name>MoreInfo</Name>
 					<Value>ข้อมูลมากกว่านี้</Value>
+				</Data>
+				<Data>
+					<Name>MoveToPreviousParentGroup</Name>
+					<Value>ย้ายไปที่กลุ่มผู้หลัก&amp;ก่อนหน้า</Value>
 				</Data>
 				<Data>
 					<Name>MultipleValues</Name>
@@ -2541,6 +2549,10 @@
 					<Value>คุณภาพ</Value>
 				</Data>
 				<Data>
+					<Name>QualityCheckToggle</Name>
+					<Value>เปิด/ปิด การใช้งานการประมาณคุณภาพสำหรับรายการนี้ (ที่นี่ในรายงานคุณภาพรหัสผ่าน ... )</Value>
+				</Data>
+				<Data>
 					<Name>Quick</Name>
 					<Value>ด่วน</Value>
 				</Data>
@@ -2599,6 +2611,10 @@
 				<Data>
 					<Name>RecycleGroupConfirm</Name>
 					<Value>แน่ใจไหมว่าต้องการย้ายกลุ่มที่เลือกไปที่ถังรีไซเคิล?</Value>
+				</Data>
+				<Data>
+					<Name>RecycleMoveInfo</Name>
+					<Value>รายการ/กลุ่ม ที่เลือกอย่างน้อยหนึ่งรายการจะถูกย้ายเข้าไปใน/ภายในถังรีไซเคิล</Value>
 				</Data>
 				<Data>
 					<Name>RecycleShowConfirm</Name>
@@ -2663,6 +2679,10 @@
 				<Data>
 					<Name>RestartKeePassQuestion</Name>
 					<Value>คุณต้องการรีสตาร์ท KeePass ตอนนี้หรือไม่?</Value>
+				</Data>
+				<Data>
+					<Name>Restore</Name>
+					<Value>คืนค่า</Value>
 				</Data>
 				<Data>
 					<Name>Retry</Name>
@@ -3027,6 +3047,14 @@
 				<Data>
 					<Name>Tags</Name>
 					<Value>แท็ก</Value>
+				</Data>
+				<Data>
+					<Name>TagsAddRemove</Name>
+					<Value>เพิ่ม/ลบ แท็ก</Value>
+				</Data>
+				<Data>
+					<Name>TagsInheritedCount</Name>
+					<Value>{PARAM} แท็กที่สืบทอดมา</Value>
 				</Data>
 				<Data>
 					<Name>TagsNotFound</Name>
@@ -4759,7 +4787,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lblEnc" BaseHash="v1:PDaH">
-					<Text>เข้า&amp;รหัสข้อความ:</Text>
+					<Text>แปลง&amp;รหัสข้อความ:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblEncPreview" BaseHash="v1:TbMe">
@@ -4807,7 +4835,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_tabEnc" BaseHash="v1:vXgc">
-					<Text>การเข้ารหัส</Text>
+					<Text>การแปลงรหัส</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_tabMain" BaseHash="v1:x6tO">
@@ -4855,8 +4883,8 @@
 					<Text>ประวัติรายการ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblDeleteHistoryEntries" BaseHash="v1:836v">
-					<Text>รายการประวัติเก่า (รายการที่แสดงในหน้าแท็บ "ประวัติ" ในไดอะล็อกรายการ) สามารถลบได้ ซึ่งจะลดขนาดฐานข้อมูลลงเล็กน้อย</Text>
+				<Control Name="m_lblDeleteHistoryEntries" BaseHash="v1:oLA2">
+					<Text>รายการประวัติ (แสดงในหน้าแท็บ "ประวัติ" ของกล่องโต้ตอบรายการ) สามารถลบได้ ซึ่งจะลดขนาดฐานข้อมูลลงเล็กน้อย</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblDelObjInfoIntro" BaseHash="v1:yH4t">
@@ -4867,8 +4895,8 @@
 					<Text>คำเตือน! หลังจากลบข้อมูลนี้วัตถุที่ถูกลบ (กลุ่ม,รายการ ,... ) อาจปรากฏขึ้นอีกครั้งเมื่อซิงโครไนซ์ฐานข้อมูลปัจจุบันกับอีกอันหนึ่ง (ซึ่งยังมีวัตถุอยู่)</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblEntryHistoryWarning" BaseHash="v1:4HCM">
-					<Text>การคลิกปุ่ม "ลบ" จะลบรายการประวัติทั้งหมดที่เก่ากว่าจำนวนวันที่ระบุ. ไม่มีทางที่จะทำให้รายการที่ลบกลับมาได้อีก.</Text>
+				<Control Name="m_lblEntryHistoryWarning" BaseHash="v1:VbQw">
+					<Text>การคลิกปุ่ม "ลบ" จะลบรายการประวัติทั้งหมดที่เก่ากว่าจำนวนวันที่ระบุ ไม่มีทางที่จะทำให้กลับมาได้</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblHistoryEntriesDays" BaseHash="v1:6onh">
@@ -5873,113 +5901,119 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.GroupForm">
-			<Window Name="" BaseHash="v1:N4sk">
+			<Window Name="" BaseHash="v1:FUAI">
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnAutoTypeEdit" BaseHash="v1:v1N2">
+				<Control Name="m_btnAutoTypeEdit" BaseHash="v1:jGx0">
 					<Layout />
 				</Control>
-				<Control Name="m_btnCancel" BaseHash="v1:BktA">
+				<Control Name="m_btnCancel" BaseHash="v1:lQ4Y">
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCDDel" BaseHash="v1:a4TI">
+				<Control Name="m_btnCDDel" BaseHash="v1:Capo">
 					<Text>&amp;ลบ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnIcon" BaseHash="v1:sDWF">
+				<Control Name="m_btnIcon" BaseHash="v1:MSqM">
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:l5KR">
+				<Control Name="m_btnOK" BaseHash="v1:NT6Z">
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbExpires" BaseHash="v1:CLpS">
+				<Control Name="m_btnTags" BaseHash="v1:vd2z">
+					<Layout />
+				</Control>
+				<Control Name="m_cbExpires" BaseHash="v1:Yij9">
 					<Text>&amp;หมดอายุ:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cmbEnableAutoType" BaseHash="v1:K6h/">
+				<Control Name="m_cmbEnableAutoType" BaseHash="v1:/ukb">
 					<Layout />
 				</Control>
-				<Control Name="m_cmbEnableSearching" BaseHash="v1:ab2T">
+				<Control Name="m_cmbEnableSearching" BaseHash="v1:Gx8j">
 					<Layout />
 				</Control>
-				<Control Name="m_dtExpires" BaseHash="v1:Amzq">
+				<Control Name="m_dtExpires" BaseHash="v1:Atw2">
 					<Layout />
 				</Control>
-				<Control Name="m_lblAutoTypeDesc" BaseHash="v1:ro92">
-					<Text>กลุ่มย่อยและรายการทั้งหมดในกลุ่มปัจจุบันที่สืบทอดลำดับประเภทอัตโนมัติของกลุ่มจะใช้กลุ่มที่ป้อนด้านบน</Text>
+				<Control Name="m_lblAutoTypeDesc" BaseHash="v1:kZQq">
+					<Text>กลุ่มย่อยและรายการทั้งหมดในกลุ่มปัจจุบันที่สืบทอดลำดับประเภทอัตโนมัติจะใช้กลุ่มที่อยู่ด้านบน</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblEnableAutoType" BaseHash="v1:zSS8">
-					<Text>คีย์อัตโนมัติสำหรับรายการในกลุ่มนี้:</Text>
+				<Control Name="m_lblEnableAutoType" BaseHash="v1:LJoJ">
+					<Text>&amp;คีย์อัตโนมัติสำหรับรายการในกลุ่มนี้: </Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblEnableSearching" BaseHash="v1:mKX6">
-					<Text>ค้&amp;นหารายการในกลุ่มนี้:</Text>
+				<Control Name="m_lblEnableSearching" BaseHash="v1:qwzV">
+					<Text>&amp;ค้นหารายการในกลุ่มนี้</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblIcon" BaseHash="v1:Mu12">
+				<Control Name="m_lblIcon" BaseHash="v1:IwTf">
 					<Text>&amp;ไอคอน:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblName" BaseHash="v1:2sTl">
+				<Control Name="m_lblName" BaseHash="v1:6QzS">
 					<Text>&amp;ชื่อ:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblNotesHint" BaseHash="v1:H73V">
-					<Text>โน๊ตจะแสดงในคำแนะนำกลุ่มเครื่องมือ</Text>
+				<Control Name="m_lblNotes" BaseHash="v1:nkve">
+					<Text>โ&amp;น้ต:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblUuid" BaseHash="v1:JSyz">
+				<Control Name="m_lblTags" BaseHash="v1:8aZ+">
+					<Text>&amp;แท็ก:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_lblUuid" BaseHash="v1:6owD">
 					<Text>&amp;UUID:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lvCustomData" BaseHash="v1:rlon">
+				<Control Name="m_lvCustomData" BaseHash="v1:gV3V">
 					<Layout />
 				</Control>
-				<Control Name="m_rbAutoTypeInherit" BaseHash="v1:gCPR">
-					<Text>&amp;รับลำดับการพิมพ์อัตโนมัติเริ่มต้นจากกลุ่มหลัก</Text>
+				<Control Name="m_rbAutoTypeInherit" BaseHash="v1:rTyy">
+					<Text>&amp;รับลำดับการคีย์อัตโนมัติเริ่มต้นจากกลุ่มหลัก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rbAutoTypeOverride" BaseHash="v1:4k6n">
+				<Control Name="m_rbAutoTypeOverride" BaseHash="v1:9Chd">
 					<Text>&amp;แทนที่ลำดับเริ่มต้น:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabAutoType" BaseHash="v1:kv6o">
+				<Control Name="m_tabAutoType" BaseHash="v1:/Lsw">
 					<Text>คีย์อัตโนมัติ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabBehavior" BaseHash="v1:b5ss">
-					<Text>พฤติกรรม</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_tabCustomData" BaseHash="v1:VD7A">
+				<Control Name="m_tabCustomData" BaseHash="v1:R60e">
 					<Text>ข้อมูลปลั๊กอิน</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabGeneral" BaseHash="v1:hs+8">
+				<Control Name="m_tabGeneral" BaseHash="v1:ez4M">
 					<Text>ทั่วไป</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabMain" BaseHash="v1:HreY">
+				<Control Name="m_tabMain" BaseHash="v1:oYDX">
 					<Layout />
 				</Control>
-				<Control Name="m_tabNotes" BaseHash="v1:s+TY">
-					<Text>โน๊ต</Text>
+				<Control Name="m_tabProperties" BaseHash="v1:WPzh">
+					<Text>คุณสมบัติ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tbDefaultAutoTypeSeq" BaseHash="v1:JrIp">
+				<Control Name="m_tbDefaultAutoTypeSeq" BaseHash="v1:KsEK">
 					<Layout />
 				</Control>
-				<Control Name="m_tbName" BaseHash="v1:reLh">
+				<Control Name="m_tbName" BaseHash="v1:KCcw">
 					<Layout />
 				</Control>
-				<Control Name="m_tbNotes" BaseHash="v1:oOGP">
+				<Control Name="m_tbNotes" BaseHash="v1:Ti45">
 					<Layout />
 				</Control>
-				<Control Name="m_tbUuid" BaseHash="v1:XdKo">
+				<Control Name="m_tbTags" BaseHash="v1:ELEL">
+					<Layout />
+				</Control>
+				<Control Name="m_tbUuid" BaseHash="v1:m9gY">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6023,46 +6057,53 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.IconPickerForm">
-			<Window Name="" BaseHash="v1:eXLe">
+			<Window Name="" BaseHash="v1:CwqG">
 				<Text>เครื่องมือเลือกไอคอน</Text>
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:C3Uj">
+				<Control Name="m_btnCancel" BaseHash="v1:tZoe">
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCustomAdd" BaseHash="v1:DveM">
+				<Control Name="m_btnCustomAdd" BaseHash="v1:RcE+">
 					<Text>&amp;เพิ่ม...</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCustomExport" BaseHash="v1:yOGr">
-					<Text>&amp;นําออก...</Text>
-					<Layout />
-				</Control>
-				<Control Name="m_btnCustomRemove" BaseHash="v1:MPx6">
+				<Control Name="m_btnCustomDelete" BaseHash="v1:5xhx">
 					<Text>&amp;ลบ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:Mr6e">
+				<Control Name="m_btnCustomExport" BaseHash="v1:68rI">
+					<Text>&amp;ส่งออก</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_btnOK" BaseHash="v1:6AYc">
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:66Mc">
+				<Control Name="m_lblFind" BaseHash="v1:AbNP">
+					<Text>&amp;ค้นหา:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lvCustomIcons" BaseHash="v1:gMDp">
+				<Control Name="m_lblSeparator" BaseHash="v1:YN6c">
 					<Layout />
 				</Control>
-				<Control Name="m_lvIcons" BaseHash="v1:OGXN">
+				<Control Name="m_lvCustomIcons" BaseHash="v1:i3zC">
 					<Layout />
 				</Control>
-				<Control Name="m_radioCustom" BaseHash="v1:gyiq">
-					<Text>&amp;ใช้ไอคอนที่กำหนดเอง (ฝังอยู่ในฐานข้อมูลปัจจุบัน):</Text>
+				<Control Name="m_lvIcons" BaseHash="v1:XdGT">
 					<Layout />
 				</Control>
-				<Control Name="m_radioStandard" BaseHash="v1:CqQQ">
+				<Control Name="m_radioCustom" BaseHash="v1:4J36">
+					<Text>ใช้ไอคอนที่&amp;กำหนดเอง (เก็บไว้ในฐานข้อมูลปัจจุบัน):</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_radioStandard" BaseHash="v1:uvVW">
 					<Text>ใช้ไอคอน&amp;มาตรฐาน:</Text>
+					<Layout />
+				</Control>
+				<Control Name="m_tbFind" BaseHash="v1:y9Oe">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6968,7 +7009,7 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.PwEntryForm">
-			<Window Name="" BaseHash="v1:0Ha9">
+			<Window Name="" BaseHash="v1:uXVS">
 				<Layout />
 			</Window>
 			<ChildControls>
@@ -6987,8 +7028,8 @@
 					<Text>&amp;แก้ไข</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnAutoTypeEditDefault" BaseHash="v1:2D02">
-					<Text>แก้&amp;ไข</Text>
+				<Control Name="m_btnAutoTypeEditDefault" BaseHash="v1:cmd4">
+					<Text>แ&amp;ก้ไข</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnAutoTypeUp" BaseHash="v1:Vwsy">
@@ -7010,7 +7051,7 @@
 					<Text>บั&amp;นทึก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCancel" BaseHash="v1:4msN">
+				<Control Name="m_btnCancel" BaseHash="v1:i/t7">
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
@@ -7018,7 +7059,7 @@
 					<Text>&amp;ลบ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnGenPw" BaseHash="v1:3pEW">
+				<Control Name="m_btnGenPw" BaseHash="v1:jORn">
 					<Layout />
 				</Control>
 				<Control Name="m_btnHistoryDelete" BaseHash="v1:fxLk">
@@ -7033,10 +7074,10 @@
 					<Text>&amp;ดู</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnIcon" BaseHash="v1:P1HB">
+				<Control Name="m_btnIcon" BaseHash="v1:Zj6l">
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:yQvu">
+				<Control Name="m_btnOK" BaseHash="v1:ragP">
 					<Text>ตกลง</Text>
 					<Layout />
 				</Control>
@@ -7046,7 +7087,7 @@
 				<Control Name="m_btnPickFgColor" BaseHash="v1:4wPK">
 					<Layout />
 				</Control>
-				<Control Name="m_btnStandardExpires" BaseHash="v1:Tyzx">
+				<Control Name="m_btnStandardExpires" BaseHash="v1:9Zxg">
 					<Layout />
 				</Control>
 				<Control Name="m_btnStrAdd" BaseHash="v1:+/kq">
@@ -7065,8 +7106,11 @@
 					<Text>ย้า&amp;ย</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnTools" BaseHash="v1:Q8x+">
-					<Text>เครื่&amp;องมือ</Text>
+				<Control Name="m_btnTags" BaseHash="v1:me/J">
+					<Layout />
+				</Control>
+				<Control Name="m_btnTools" BaseHash="v1:W9rm">
+					<Text>เครื่อง&amp;มือ</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cbAutoTypeEnabled" BaseHash="v1:A9Dl">
@@ -7074,7 +7118,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_cbAutoTypeObfuscation" BaseHash="v1:Dibx">
-					<Text>&amp;การทำให้สับสนคีย์อัตโนมัติสองช่องสัญญาณ</Text>
+					<Text>ก&amp;ารทำให้สับสนคีย์อัตโนมัติสองช่องสัญญาณ</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cbCustomBackgroundColor" BaseHash="v1:1Qty">
@@ -7085,18 +7129,18 @@
 					<Text>สีพื้นหน้าแบบ&amp;กำหนดเอง:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbExpires" BaseHash="v1:J5TQ">
+				<Control Name="m_cbExpires" BaseHash="v1:ddcZ">
 					<Text>&amp;หมดอายุ:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_cbHidePassword" BaseHash="v1:r1Je">
+				<Control Name="m_cbHidePassword" BaseHash="v1:Orba">
 					<Text>***</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_cmbOverrideUrl" BaseHash="v1:IbOF">
 					<Layout />
 				</Control>
-				<Control Name="m_dtExpireDateTime" BaseHash="v1:/kBc">
+				<Control Name="m_dtExpireDateTime" BaseHash="v1:Gazm">
 					<Layout />
 				</Control>
 				<Control Name="m_grpAttachments" BaseHash="v1:zYw5">
@@ -7122,8 +7166,8 @@
 					<Text>ข้อมูลปลั๊ก&amp;อิน:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblIcon" BaseHash="v1:x3GF">
-					<Text>ไอ&amp;คอน:</Text>
+				<Control Name="m_lblIcon" BaseHash="v1:rK9f">
+					<Text>&amp;ไอคอน</Text>
 					<Layout X="-2%c" />
 				</Control>
 				<Control Name="m_lblModified" BaseHash="v1:Ckrb">
@@ -7153,15 +7197,15 @@
 					<Text>รุ่นก่อ&amp;นหน้า:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblQuality" BaseHash="v1:nRQo">
+				<Control Name="m_lblQuality" BaseHash="v1:kHJ+">
 					<Text>คุณภาพ:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblQualityInfo" BaseHash="v1:meHo">
+				<Control Name="m_lblQualityInfo" BaseHash="v1:1UIQ">
 					<Text>0 ch.</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:60XP">
+				<Control Name="m_lblSeparator" BaseHash="v1:/POD">
 					<Layout />
 				</Control>
 				<Control Name="m_lblTags" BaseHash="v1:/WfL">
@@ -7203,18 +7247,18 @@
 				<Control Name="m_lvStrings" BaseHash="v1:djl9">
 					<Layout />
 				</Control>
-				<Control Name="m_pbQuality" BaseHash="v1:SmV8">
+				<Control Name="m_pbQuality" BaseHash="v1:Wsbt">
 					<Layout />
 				</Control>
-				<Control Name="m_rbAutoTypeOverride" BaseHash="v1:B/0b">
-					<Text>แทนที่ลำ&amp;ดับเริ่มต้น:</Text>
+				<Control Name="m_rbAutoTypeOverride" BaseHash="v1:V3Mv">
+					<Text>แ&amp;ทนที่ลำดับเริ่มต้น:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rbAutoTypeSeqInherit" BaseHash="v1:Qm7E">
-					<Text>&amp;รับลำดับการพิมพ์อัตโนมัติเริ่มต้นจากกลุ่ม</Text>
+				<Control Name="m_rbAutoTypeSeqInherit" BaseHash="v1:eaGT">
+					<Text>&amp;รับลำดับการคีย์อัตโนมัติเริ่มต้นจากกลุ่ม</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_rtNotes" BaseHash="v1:ui8D">
+				<Control Name="m_rtNotes" BaseHash="v1:cRmG">
 					<Layout />
 				</Control>
 				<Control Name="m_tabAdvanced" BaseHash="v1:w9BC">
@@ -7225,40 +7269,40 @@
 					<Text>คีย์อัตโนมัติ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabEntry" BaseHash="v1:/gOi">
-					<Text>รายการ</Text>
+				<Control Name="m_tabEntry" BaseHash="v1:q6EX">
+					<Text>ทั่วไป</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_tabHistory" BaseHash="v1:MV7M">
 					<Text>ประวัติ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tabMain" BaseHash="v1:uBwB">
+				<Control Name="m_tabMain" BaseHash="v1:X7KW">
 					<Layout />
 				</Control>
 				<Control Name="m_tabProperties" BaseHash="v1:Y3o5">
 					<Text>คุณสมบัติ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_tbDefaultAutoTypeSeq" BaseHash="v1:/Dr3">
+				<Control Name="m_tbDefaultAutoTypeSeq" BaseHash="v1:MTG/">
 					<Layout />
 				</Control>
-				<Control Name="m_tbPassword" BaseHash="v1:0ptf">
+				<Control Name="m_tbPassword" BaseHash="v1:/zgQ">
 					<Layout />
 				</Control>
-				<Control Name="m_tbRepeatPassword" BaseHash="v1:6sOV">
+				<Control Name="m_tbRepeatPassword" BaseHash="v1:PaQw">
 					<Layout />
 				</Control>
-				<Control Name="m_tbTags" BaseHash="v1:mpzP">
+				<Control Name="m_tbTags" BaseHash="v1:RQoO">
 					<Layout />
 				</Control>
-				<Control Name="m_tbTitle" BaseHash="v1:/lfi">
+				<Control Name="m_tbTitle" BaseHash="v1:kjwi">
 					<Layout />
 				</Control>
-				<Control Name="m_tbUrl" BaseHash="v1:UE3v">
+				<Control Name="m_tbUrl" BaseHash="v1:cAkN">
 					<Layout />
 				</Control>
-				<Control Name="m_tbUserName" BaseHash="v1:j0CS">
+				<Control Name="m_tbUserName" BaseHash="v1:azXb">
 					<Layout />
 				</Control>
 				<Control Name="m_tbUuid" BaseHash="v1:2nR6">
@@ -7533,7 +7577,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lblSearchFor" BaseHash="v1:lmKy">
-					<Text>หาอ&amp;ะไร:</Text>
+					<Text>ค้นหาอ&amp;ะไร:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblSep" BaseHash="v1:yJ3H">
@@ -7662,7 +7706,7 @@
 		</Form>
 		<Form FullName="KeePass.Forms.TextEncodingForm">
 			<Window Name="" BaseHash="v1:joxh">
-				<Text>การเข้ารหัสข้อความ</Text>
+				<Text>การแปลงรหัสข้อความ</Text>
 				<Layout />
 			</Window>
 			<ChildControls>
@@ -7685,7 +7729,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lblSelEnc" BaseHash="v1:ygWa">
-					<Text>&amp;เลือกการเข้ารหัสของข้อความ:</Text>
+					<Text>&amp;เลือกการแปลงรหัสของข้อความ:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_rtbPreview" BaseHash="v1:mT4s">
@@ -7824,7 +7868,7 @@
 					<Layout />
 				</Control>
 				<Control Name="m_lblMatch" BaseHash="v1:qjPj">
-					<Text>ห&amp;าอะไร:</Text>
+					<Text>ค้นห&amp;าอะไร:</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_lblReplace" BaseHash="v1:pwgL">
