@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>C3B18AF3A3907F4CAC393D5B4DE32A7D</FileUuid>
-		<LastModified>2021-09-11 17:50:19Z</LastModified>
+		<FileUuid>47A7FB8046DA2E40B702BD868130AF94</FileUuid>
+		<LastModified>2021-09-11 18:05:20Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -1458,7 +1458,7 @@
 				</Data>
 				<Data>
 					<Name>GenPwSprVariant</Name>
-					<Value>รหัสผ่านที่สร้างขึ้นประกอบด้วยตัวยึด เมื่อใช้รหัสผ่านนี้ (เช่นโดยการคัดลอกไปยังคลิปบอร์ดหรือพิมพ์อัตโนมัติ) ตัวยึดตำแหน่งจะถูกแทนที่เช่นอาจใช้รหัสผ่านอื่นได้อย่างมีประสิทธิภาพสืบเนื่องมาจากรหัสผ่านก่อนหน้า</Value>
+					<Value>รหัสผ่านที่สร้างขึ้นประกอบด้วยตัวยึด เมื่อใช้รหัสผ่านนี้ (เช่นโดยการคัดลอกไปยังคลิปบอร์ดหรือ auto-typing) ตัวยึดตำแหน่งจะถูกแทนที่เช่นอาจใช้รหัสผ่านอื่นได้อย่างมีประสิทธิภาพสืบเนื่องมาจากรหัสผ่านก่อนหน้า</Value>
 				</Data>
 				<Data>
 					<Name>Gradient</Name>
@@ -3982,11 +3982,11 @@
 				</Data>
 				<Data>
 					<Name>m_menuEntryPerformAutoType</Name>
-					<Value>ทำการพิมพ์&amp;อัตโนมัติ</Value>
+					<Value>ทำการ Auto&amp;-Type</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntryAutoTypeAdv</Name>
-					<Value>ทำการพิมพ์อัต&amp;โนมัติ</Value>
+					<Value>ทำการ Auto-&amp;Type</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntryAdd</Name>
