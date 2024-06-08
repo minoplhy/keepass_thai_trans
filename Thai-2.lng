@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.54</ApplicationVersion>
+		<ApplicationVersion>2.55</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>6D87A38C750F924A950819B4098EBF2A</FileUuid>
-		<LastModified>2023-05-27 15:36:22Z</LastModified>
+		<FileUuid>479A736A38ED5B46932F8D042568A633</FileUuid>
+		<LastModified>2023-10-04 20:02:08Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -103,6 +103,10 @@
 				<Data>
 					<Name>AllUsers</Name>
 					<Value>ผู้ใช้ทั้งหมด</Value>
+				</Data>
+				<Data>
+					<Name>AlwaysP</Name>
+					<Value>'{PARAM}' เสมอ</Value>
 				</Data>
 				<Data>
 					<Name>Application</Name>
@@ -2025,6 +2029,18 @@
 					<Value>หากคุณต้องการใช้ผู้ให้บริการคีย์ที่เลือกคุณต้องปิดใช้งานตัวเลือกเดสก์ท็อปที่ปลอดภัยใน 'เครื่องมือ' -&gt; 'ตัวเลือก' -&gt; แท็บ 'ความปลอดภัย'</Value>
 				</Data>
 				<Data>
+					<Name>KeyTransformDefaultsQ</Name>
+					<Value>คุณต้องการตั้งค่าให้เป็นค่าเริ่มต้นปัจจุบัน (แนะนำ) หรือไม่?</Value>
+				</Data>
+				<Data>
+					<Name>KeyTransformWeak</Name>
+					<Value>การตั้งค่าการเปลี่ยนแปลงคีย์ของฐานข้อมูลอ่อนแอ</Value>
+				</Data>
+				<Data>
+					<Name>KeyTransformWeakWarning</Name>
+					<Value>แสดงคำเตือนเมื่อการตั้งค่าการแปลงคีย์อ่อนแอ</Value>
+				</Data>
+				<Data>
 					<Name>LanguageSelected</Name>
 					<Value>เปิดใช้งานภาษาที่เลือกแล้ว ต้องรีสตาร์ท KeePass เพื่อโหลดภาษา</Value>
 				</Data>
@@ -3514,7 +3530,7 @@
 				</Data>
 				<Data>
 					<Name>TransformTime</Name>
-					<Value>การเปลี่ยนแปลงครั้งสำคัญใช้เวลา {PARAM} วินาที</Value>
+					<Value>การเปลี่ยนแปลงคีย์ใช้เวลา {PARAM} วินาที</Value>
 				</Data>
 				<Data>
 					<Name>TrayIcon</Name>
@@ -4074,7 +4090,7 @@
 				</Data>
 				<Data>
 					<Name>UnknownHeaderId</Name>
-					<Value>ไม่ทราบIDส่วนหัว!</Value>
+					<Value>ไม่ทราบ ID ส่วนหัว!</Value>
 				</Data>
 				<Data>
 					<Name>UnknownKdf</Name>
@@ -4395,6 +4411,22 @@
 				<Data>
 					<Name>m_menuEntryMoveToGroup</Name>
 					<Value>ย้ายไปที่&amp;กลุ่ม</Value>
+				</Data>
+				<Data>
+					<Name>m_menuEntryCompare</Name>
+					<Value>&amp;เปรียบเทียบ</Value>
+				</Data>
+				<Data>
+					<Name>m_menuEntryCompare2</Name>
+					<Value>&amp;เปรียบเทียบรายการ...</Value>
+				</Data>
+				<Data>
+					<Name>m_menuEntryCompareMark</Name>
+					<Value>&amp;ทำเครื่องหมายรายการเพื่อเปรียบเทียบ</Value>
+				</Data>
+				<Data>
+					<Name>m_menuEntryCompare1</Name>
+					<Value>เ&amp;ปรียบเทียบรายการกับรายการที่ทำเครื่องหมายไว้...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntryDX</Name>
