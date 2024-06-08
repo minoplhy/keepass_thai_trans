@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.56</ApplicationVersion>
+		<ApplicationVersion>2.57</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>D13F1E6749186646B97FD626AA268B6A</FileUuid>
-		<LastModified>2024-01-29 04:47:20Z</LastModified>
+		<FileUuid>CDEC6AF39843BC48AE3D4F04751B7B07</FileUuid>
+		<LastModified>2024-06-01 04:12:53Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -1275,6 +1275,10 @@
 				<Data>
 					<Name>Export</Name>
 					<Value>ส่งออก</Value>
+				</Data>
+				<Data>
+					<Name>ExportCmd</Name>
+					<Value>&amp;ส่งออก...</Value>
 				</Data>
 				<Data>
 					<Name>ExportEntriesCmd</Name>
@@ -2541,6 +2545,14 @@
 					<Value>ปรับให้เหมาะสมสำหรับโปรแกรมอ่านหน้าจอ (เปิดใช้งานเฉพาะเมื่อคุณใช้โปรแกรมอ่านหน้าจอ)</Value>
 				</Data>
 				<Data>
+					<Name>OptionActivateAboutTo</Name>
+					<Value>คุณกำลังจะเปิดใช้งานตัวเลือกต่อไปนี้:</Value>
+				</Data>
+				<Data>
+					<Name>OptionActivateConfirm</Name>
+					<Value>คุณแน่ใจหรือไม่ว่าต้องการเปิดใช้งานตัวเลือกนี้?</Value>
+				</Data>
+				<Data>
 					<Name>OptionReqOn</Name>
 					<Value>สำหรับการดำเนินการนี้ต้องเปิดตัวเลือกต่อไปนี้:</Value>
 				</Data>
@@ -2845,6 +2857,14 @@
 					<Value>เวอร์ชันก่อนวางจำหน่าย</Value>
 				</Data>
 				<Data>
+					<Name>PreventScreenCapture</Name>
+					<Value>ป้องกันบางการจับภาพหน้าจอ</Value>
+				</Data>
+				<Data>
+					<Name>PreventScreenCaptureNote</Name>
+					<Value>นอกจากนี้ยังอาจป้องกันไม่ให้ซอฟต์แวร์อื่นที่ไม่ได้เป็นอันตราย (Remote Desktop, เครื่องมือช่วยการเข้าถึง เช่น แว่นขยายหน้าจอ ฯลฯ) ไม่เห็นหน้าต่าง KeePass</Value>
+				</Data>
+				<Data>
 					<Name>Print</Name>
 					<Value>พิมพ์</Value>
 				</Data>
@@ -2999,6 +3019,10 @@
 				<Data>
 					<Name>RemoteHostReachable</Name>
 					<Value>โฮสต์ระยะไกลสามารถเข้าถึงได้ (ping)</Value>
+				</Data>
+				<Data>
+					<Name>RenameCmd</Name>
+					<Value>&amp;เปลี่ยนชื่อ...</Value>
 				</Data>
 				<Data>
 					<Name>RepairCmd</Name>
@@ -3353,10 +3377,6 @@
 					<Value>คีย์พิเศษ</Value>
 				</Data>
 				<Data>
-					<Name>SslCertsAcceptInvalid</Name>
-					<Value>ยอมรับใบรับรอง SSL ที่ไม่ถูกต้อง (ลงชื่อด้วยตนเอง,หมดอายุ ... )</Value>
-				</Data>
-				<Data>
 					<Name>StandardExpireSelect</Name>
 					<Value>เลือกหนึ่งในเวลาหมดอายุมาตรฐาน</Value>
 				</Data>
@@ -3515,6 +3535,10 @@
 				<Data>
 					<Name>Title</Name>
 					<Value>หัวข้อ</Value>
+				</Data>
+				<Data>
+					<Name>TlsCertsAcceptInvalid</Name>
+					<Value>ยอมรับใบรับรอง TLS/SSL ที่ไม่ถูกต้อง (self-signed, expired, ...)</Value>
 				</Data>
 				<Data>
 					<Name>Toggle</Name>
@@ -4302,7 +4326,7 @@
 				</Data>
 				<Data>
 					<Name>m_menuGroupExport</Name>
-					<Value>นํา&amp;กลุ่มออก...</Value>
+					<Value>ส่ง&amp;ออกกลุ่ม...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntry</Name>
@@ -5095,7 +5119,7 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.ColumnsForm">
-			<Window Name="" BaseHash="v1:5FuR">
+			<Window Name="" BaseHash="v1:reLY">
 				<Layout />
 			</Window>
 			<ChildControls>
@@ -5111,19 +5135,23 @@
 					<Text>&amp;ซ่อนข้อมูลโดยใช้เครื่องหมายดอกจัน</Text>
 					<Layout />
 				</Control>
+				<Control Name="m_cbRmbHidingPasswords" BaseHash="v1:n9dW">
+					<Text>&amp;จำการตั้งค่าการซ่อนรหัสผ่าน</Text>
+					<Layout />
+				</Control>
 				<Control Name="m_lblChoose" BaseHash="v1:BP+N">
 					<Text>&amp;เลือกคอลัมน์ที่จะแสดงในหน้าต่างหลัก:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblReorderHint" BaseHash="v1:lTtc">
-					<Text>ในการจัดลำดับคอลัมน์ใหม่ให้ ลาก&amp;&amp;วาง ส่วนหัวของคอลัมน์ในหน้าต่างหลัก</Text>
+				<Control Name="m_lblReorderHint" BaseHash="v1:9t5+">
+					<Text>หากต้องการเรียงลำดับคอลัมน์ใหม่ ให้ลาก&amp;และวางส่วนหัวคอลัมน์ในหน้าต่างหลัก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSortHint" BaseHash="v1:ygSx">
-					<Text>ในการจัดเรียงรายการตามเขตข้อมูลให้คลิกที่ส่วนหัวของคอลัมน์ที่เกี่ยวข้องในหน้าต่างหลัก</Text>
+				<Control Name="m_lblSortHint" BaseHash="v1:BP5F">
+					<Text>หากต้องการจัดเรียงรายการตามฟิลด์ ให้คลิกที่ส่วนหัวคอลัมน์ที่เกี่ยวข้องในหน้าต่างหลัก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lvColumns" BaseHash="v1:ImUO">
+				<Control Name="m_lvColumns" BaseHash="v1:ISD6">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6280,24 +6308,31 @@
 			</ChildControls>
 		</Form>
 		<Form FullName="KeePass.Forms.FileBrowserForm">
-			<Window Name="" BaseHash="v1:DYA/">
+			<Window Name="" BaseHash="v1:Q82G">
 				<Layout />
 			</Window>
 			<ChildControls>
-				<Control Name="m_btnCancel" BaseHash="v1:nSwd">
+				<Control Name="m_btnCancel" BaseHash="v1:q9uR">
 					<Text>ยกเลิก</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnOK" BaseHash="v1:3DHd">
+				<Control Name="m_btnOK" BaseHash="v1:tGsW">
 					<Layout />
 				</Control>
-				<Control Name="m_lblHint" BaseHash="v1:Iypz">
+				<Control Name="m_lblFileName" BaseHash="v1:ak7d">
+					<Text>ชื่อ&amp;ไฟล์:</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_lblSeparator" BaseHash="v1:QFkT">
+				<Control Name="m_lblHint" BaseHash="v1:tOSR">
 					<Layout />
 				</Control>
-				<Control Name="m_lvFiles" BaseHash="v1:EkS2">
+				<Control Name="m_lblSeparator" BaseHash="v1:x6Z4">
+					<Layout />
+				</Control>
+				<Control Name="m_lvFiles" BaseHash="v1:LaU/">
+					<Layout />
+				</Control>
+				<Control Name="m_tbFileName" BaseHash="v1:OKA3">
 					<Layout />
 				</Control>
 			</ChildControls>
@@ -6479,8 +6514,8 @@
 					<Text>&amp;ลบ</Text>
 					<Layout />
 				</Control>
-				<Control Name="m_btnCustomExport" BaseHash="v1:68rI">
-					<Text>&amp;ส่งออก</Text>
+				<Control Name="m_btnCustomMore" BaseHash="v1:/BFR">
+					<Text>เ&amp;พิ่มเติม...</Text>
 					<Layout />
 				</Control>
 				<Control Name="m_btnOK" BaseHash="v1:6AYc">
