@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>7673670C074A2445B918253DBFCCD3C9</FileUuid>
-		<LastModified>2021-09-06 17:49:07Z</LastModified>
+		<FileUuid>C3B18AF3A3907F4CAC393D5B4DE32A7D</FileUuid>
+		<LastModified>2021-09-11 17:50:19Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -2614,7 +2614,7 @@
 				</Data>
 				<Data>
 					<Name>Ready</Name>
-					<Value>พร้อม.</Value>
+					<Value>พร้อม</Value>
 				</Data>
 				<Data>
 					<Name>Recommended</Name>
@@ -2990,7 +2990,7 @@
 				</Data>
 				<Data>
 					<Name>SslCertsAcceptInvalid</Name>
-					<Value>ยอมรับใบรับรอง SSL ที่ไม่ถูกต้อง (ลงชื่อด้วยตน,เองหมดอายุ ... )</Value>
+					<Value>ยอมรับใบรับรอง SSL ที่ไม่ถูกต้อง (ลงชื่อด้วยตนเอง,หมดอายุ ... )</Value>
 				</Data>
 				<Data>
 					<Name>StandardExpireSelect</Name>
@@ -3338,7 +3338,7 @@
 				</Data>
 				<Data>
 					<Name>UrlOpenDesc</Name>
-					<Value>เปิดฐานข้อมูลที่จัดเก็บไว้ในบริการ</Value>
+					<Value>เปิดฐานข้อมูลที่จัดเก็บไว้ในเซิร์ฟเวอร์</Value>
 				</Data>
 				<Data>
 					<Name>UrlOpenTitle</Name>
@@ -3954,7 +3954,7 @@
 				</Data>
 				<Data>
 					<Name>m_menuEntryCopyUserName</Name>
-					<Value>คัดลอก ชื่อ&amp;ผู้ใช้</Value>
+					<Value>คัดลอกชื่อ&amp;ผู้ใช้</Value>
 				</Data>
 				<Data>
 					<Name>m_menuEntryUrl</Name>
@@ -4310,7 +4310,7 @@
 				</Data>
 				<Data>
 					<Name>m_menuToolsCreateKeyFile</Name>
-					<Value>&amp;สร้างไฟล์คีย์...</Value>
+					<Value>&amp;สร้างคีย์ไฟล์...</Value>
 				</Data>
 				<Data>
 					<Name>m_menuToolsTriggers</Name>
