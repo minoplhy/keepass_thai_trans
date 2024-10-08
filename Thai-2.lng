@@ -2,7 +2,7 @@
 <Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Properties>
 		<Application>KeePass Password Safe</Application>
-		<ApplicationVersion>2.57</ApplicationVersion>
+		<ApplicationVersion>2.57.1</ApplicationVersion>
 		<NameEnglish>Thai</NameEnglish>
 		<NameNative>ไทย</NameNative>
 		<Iso6391Code>th</Iso6391Code>
@@ -10,8 +10,8 @@
 		<AuthorName>K. sirap</AuthorName>
 		<AuthorContact>https://github.com/minoplhy</AuthorContact>
 		<Generator>TrlUtil</Generator>
-		<FileUuid>CDEC6AF39843BC48AE3D4F04751B7B07</FileUuid>
-		<LastModified>2024-06-01 04:12:53Z</LastModified>
+		<FileUuid>3B932C499147E7408474E87AC7DA61D8</FileUuid>
+		<LastModified>2024-10-08 16:40:00Z</LastModified>
 	</Properties>
 	<StringTables>
 		<StringTable Name="KeePass.Resources.KPRes">
@@ -26,7 +26,11 @@
 				</Data>
 				<Data>
 					<Name>Action</Name>
-					<Value>การกระทํา</Value>
+					<Value>Action</Value>
+				</Data>
+				<Data>
+					<Name>ActionLower</Name>
+					<Value>action</Value>
 				</Data>
 				<Data>
 					<Name>ActivateDatabaseTab</Name>
@@ -326,7 +330,7 @@
 				</Data>
 				<Data>
 					<Name>AutoTypeUnknownPlaceholder</Name>
-					<Value>ตัวยึดตำแหน่ง Auto-type หรือรหัสคีย์พิเศษต่อไปนี้ ไม่เป็นที่รู้จัก/ไม่รองรับ:</Value>
+					<Value>ตัวยึด Auto-type หรือตัวอักษรพิเศษต่อไปนี้ ไม่เป็นที่รู้จัก/ไม่รองรับ:</Value>
 				</Data>
 				<Data>
 					<Name>AutoTypeXDoToolRequired</Name>
@@ -1373,6 +1377,10 @@
 					<Value>ไฟล์</Value>
 				</Data>
 				<Data>
+					<Name>FileArgsDetailsHint</Name>
+					<Value>คลิกที่ 'รายละเอียด' หากคุณต้องการดูเส้นทาง/อาร์กิวเมนต์ของไฟล์ที่คอมไพล์แล้ว (ข้อมูลจะไม่ถูกซ่อนโดยใช้เครื่องหมายดอกจัน)</Value>
+				</Data>
+				<Data>
 					<Name>FileChanged</Name>
 					<Value>ไฟล์บน ดิสก์/เซิร์ฟเวอร์ มีการเปลี่ยนแปลงตั้งแต่โหลด อาจมีคนอื่นแก้ไขและบันทึกฐานข้อมูล</Value>
 				</Data>
@@ -1630,7 +1638,7 @@
 				</Data>
 				<Data>
 					<Name>GenPwSprVariant</Name>
-					<Value>รหัสผ่านที่สร้างขึ้นประกอบด้วยตัวยึด เมื่อใช้รหัสผ่านนี้ (เช่นโดยการคัดลอกไปยังคลิปบอร์ดหรือ auto-typing) ตัวยึดตำแหน่งจะถูกแทนที่เช่นอาจใช้รหัสผ่านอื่นได้อย่างมีประสิทธิภาพสืบเนื่องมาจากรหัสผ่านก่อนหน้า</Value>
+					<Value>รหัสผ่านที่สร้างขึ้นประกอบด้วย"ตัวยึด" เมื่อใช้รหัสผ่านนี้ (เช่นโดยการคัดลอกไปยังคลิปบอร์ดหรือ auto-typing) ตัวยึดจะถูกแทนที่ กล่าวคือ อาจมีการใช้รหัสผ่านที่แตกต่างกันได้</Value>
 				</Data>
 				<Data>
 					<Name>Gradient</Name>
@@ -1654,7 +1662,7 @@
 				</Data>
 				<Data>
 					<Name>HelpPlh</Name>
-					<Value>&amp;ช่วยเหลือ; {PARAM} ตัวยึดตำแหน่ง </Value>
+					<Value>&amp;ช่วยเหลือ; ตัวยึด {PARAM}</Value>
 				</Data>
 				<Data>
 					<Name>HelpSourceNoLocalOption</Name>
@@ -1843,10 +1851,6 @@
 				<Data>
 					<Name>InvalidUrl</Name>
 					<Value>URL ที่ระบุไม่ถูกต้อง</Value>
-				</Data>
-				<Data>
-					<Name>InvalidUserPassword</Name>
-					<Value>ชุดmชื่อผู้ใช้/รหัสผ่านmที่ระบุไม่ถูกต้อง</Value>
 				</Data>
 				<Data>
 					<Name>IOConnection</Name>
@@ -2570,7 +2574,7 @@
 				</Data>
 				<Data>
 					<Name>OtherPlaceholders</Name>
-					<Value>ตัวยึดตำแหน่งอื่น ๆ</Value>
+					<Value>ตัวยึดอื่น ๆ</Value>
 				</Data>
 				<Data>
 					<Name>OtpAuthUri</Name>
@@ -2723,6 +2727,10 @@
 				<Data>
 					<Name>PickIcon</Name>
 					<Value>เลือกไอคอน</Value>
+				</Data>
+				<Data>
+					<Name>PlhSprConfirm</Name>
+					<Value>แสดงกล่องโต้ตอบยืนยันเมื่อ ประเมิน/แทนที่ ตัวยึด '{PARAM}'</Value>
 				</Data>
 				<Data>
 					<Name>Plugin</Name>
@@ -3077,6 +3085,10 @@
 					<Value>ไดเรกทอรีราก</Value>
 				</Data>
 				<Data>
+					<Name>RunOpenFileQ</Name>
+					<Value>คุณแน่ใจหรือไม่ว่าต้องการเรียกใช้/เปิดไฟล์?</Value>
+				</Data>
+				<Data>
 					<Name>SameKeybLayout</Name>
 					<Value>ตรวจสอบให้แน่ใจว่ารูปแบบแป้นพิมพ์เดียวกันระหว่าง Auto-type</Value>
 				</Data>
@@ -3374,7 +3386,11 @@
 				</Data>
 				<Data>
 					<Name>SpecialKeys</Name>
-					<Value>คีย์พิเศษ</Value>
+					<Value>ตัวอักษรพิเศษ</Value>
+				</Data>
+				<Data>
+					<Name>SprPlhQ</Name>
+					<Value>คุณแน่ใจว่าต้องการ ประเมิน/แทนที่ ตัวยึดหรือไม่</Value>
 				</Data>
 				<Data>
 					<Name>StandardExpireSelect</Name>
@@ -3709,6 +3725,10 @@
 					<Value>ปัจจุบัน</Value>
 				</Data>
 				<Data>
+					<Name>UriRunConfirm</Name>
+					<Value>แสดงกล่องโต้ตอบยืนยันเมื่อเรียกใช้/เปิด URI '{PARAM}'</Value>
+				</Data>
+				<Data>
 					<Name>Url</Name>
 					<Value>URL</Value>
 				</Data>
@@ -3759,10 +3779,6 @@
 				<Data>
 					<Name>UserName</Name>
 					<Value>ชื่อผู้ใช้</Value>
-				</Data>
-				<Data>
-					<Name>UserNamePrompt</Name>
-					<Value>ป้อนชื่อผู้ใช้:</Value>
 				</Data>
 				<Data>
 					<Name>UserNameStc</Name>
@@ -3847,14 +3863,6 @@
 				<Data>
 					<Name>WebBrowser</Name>
 					<Value>เว็บเบราว์เซอร์</Value>
-				</Data>
-				<Data>
-					<Name>WebSiteLogin</Name>
-					<Value>เข้าสู่ระบบเว็บไซต์</Value>
-				</Data>
-				<Data>
-					<Name>WebSites</Name>
-					<Value>เว็บไซต์</Value>
 				</Data>
 				<Data>
 					<Name>WindowsFavorites</Name>
@@ -4027,6 +4035,10 @@
 				<Data>
 					<Name>FinalKeyCreationFailed</Name>
 					<Value>ไม่สามารถสร้างคีย์การ เข้ารหัส/ถอดรหัส สุดท้าย!</Value>
+				</Data>
+				<Data>
+					<Name>FollowRedirects</Name>
+					<Value>ติดตามการเปลี่ยนเส้นทาง</Value>
 				</Data>
 				<Data>
 					<Name>FrameworkNotImplExcp</Name>
